@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using MSTestOverview.ScreeShot;
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Windows;
 using System;
@@ -21,17 +22,20 @@ namespace MSTestOverview
         [TestCleanup]
         public void EndTest()
         {
+            var shot = new ScreenShotRun(sessionCalc);
+            shot.TakeScreenShot();
             sessionCalc.Quit();
         }
 
         [TestMethod]
         public void TestMethodSum()
-        {
-            
+        {           
             sessionCalc.FindElementByAccessibilityId("num3Button").Click();
             sessionCalc.FindElementByAccessibilityId("plusButton").Click();
             sessionCalc.FindElementByAccessibilityId("num3Button").Click();
             sessionCalc.FindElementByAccessibilityId("equalButton").Click();
+
+            Assert.AreEqual("A exibição é 6", sessionCalc.FindElementByAccessibilityId("CalculatorResults").Text);
         }
     }
 }
