@@ -2,6 +2,7 @@
 using MSTestOverview.ScreeShot;
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Windows;
+using OpenQA.Selenium.Remote;
 using System;
 
 namespace MSTestOverview
@@ -34,7 +35,6 @@ namespace MSTestOverview
             sessionCalc.FindElementByAccessibilityId("plusButton").Click();
             sessionCalc.FindElementByAccessibilityId("num3Button").Click();
             sessionCalc.FindElementByAccessibilityId("equalButton").Click();
-
             Assert.AreEqual("A exibição é 6", sessionCalc.FindElementByAccessibilityId("CalculatorResults").Text);
         }
     }

@@ -70,7 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ScreeShot\ScreenShotRun.cs" />
-    <Compile Include="TestCalculator.cs" />
+    <Compile Include="Tests\TestCalculator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
