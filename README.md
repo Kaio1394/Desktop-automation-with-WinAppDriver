@@ -10,7 +10,7 @@ This is a little automation with WinAppDriver and the framework MSTest using Pag
 ***Installation:***
 - Access a page https://visualstudio.microsoft.com/pt-br/vs/older-downloads/ and downloading Microsoft Visual Studio 2019.
 - Access a page https://github.com/microsoft/WinAppDriver/releases downloading WinAppDriver.exe and WinAppDriverUiRecorder to map elements.
-- After that, make mapping with  WinAppDriver UI Recorder, in this case to calculator: ``` "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" ``` through constructor class:
+- After that, make mapping with  WinAppDriver UI Recorder, in this case to calculator: ``` "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" ``` through constructor class Page Object:
 ```C#
  public PageObject(WindowsDriver<WindowsElement> element, string propertyElement, string uriDriver)
         {
