@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using MSTestOverview.Pages;
 using MSTestOverview.ScreeShot;
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Windows;
@@ -10,32 +11,27 @@ namespace MSTestOverview
     [TestClass]
     public class TestCalculator
     {
-        private WindowsDriver<WindowsElement> sessionCalc;
-        private AppiumOptions appOptions;
+        private PageObject page;
 
         [TestInitialize]
         public void Start()
         {
-            appOptions = new AppiumOptions();
-            appOptions.AddAdditionalCapability("app", "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App");
-            sessionCalc = new WindowsDriver<WindowsElement>(new Uri("http://127.0.0.1:4723/"), appOptions);
+            page = new PageObject(null, "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App", "http://127.0.0.1:4723/");
         }
         [TestCleanup]
         public void EndTest()
         {
-            var shot = new ScreenShotRun(sessionCalc);
+            var shot = new ScreenShotRun(page.Element);
             shot.TakeScreenShot();
-            sessionCalc.Quit();
+            page.CloseWindows();
         }
 
         [TestMethod]
         public void TestMethodSum()
-        {           
-            sessionCalc.FindElementByAccessibilityId("num3Button").Click();
-            sessionCalc.FindElementByAccessibilityId("plusButton").Click();
-            sessionCalc.FindElementByAccessibilityId("num3Button").Click();
-            sessionCalc.FindElementByAccessibilityId("equalButton").Click();
-            Assert.AreEqual("A exibição é 6", sessionCalc.FindElementByAccessibilityId("CalculatorResults").Text);
+        {
+            page.ClickInElementById("num3Button", "plusButton", "num3Button", "equalButton");
+
+            Assert.AreEqual("A exibição é 6", page.ReturnTextOfElement("CalculatorResults"));
         }
     }
 }

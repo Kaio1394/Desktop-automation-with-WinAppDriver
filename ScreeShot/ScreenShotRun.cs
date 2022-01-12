@@ -17,11 +17,7 @@ namespace MSTestOverview.ScreeShot
             Elemento = elemento;
         }
 
-        public void TakeScreenShot()
-        {
-            var screenShot = Elemento.GetScreenshot();
-            screenShot.SaveAsFile($".\\Screenshot{DateTime.Now.ToString("ddMMyyyyhhmmss")}.png",
-            ScreenshotImageFormat.Png);
-        }
+        public void TakeScreenShot() => 
+            Elemento.GetScreenshot().SaveAsFile($".\\Screenshot{DateTime.Now.ToString("ddMMyyyyhhmmss")}.png", ScreenshotImageFormat.Png);        
     }
 }

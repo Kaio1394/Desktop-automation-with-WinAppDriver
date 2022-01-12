@@ -69,6 +69,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\PageObject.cs" />
     <Compile Include="ScreeShot\ScreenShotRun.cs" />
     <Compile Include="Tests\TestCalculator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
