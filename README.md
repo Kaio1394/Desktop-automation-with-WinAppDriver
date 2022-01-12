@@ -50,5 +50,5 @@ public void ClickInElementById(params string[] elements)
 ```
 
 ***Study source:***
-- Plataforma Udemy: https://www.udemy.com/course/appium-winappdriver-automation-testing/.
+- Udemy plataform: https://www.udemy.com/course/appium-winappdriver-automation-testing/.
 
