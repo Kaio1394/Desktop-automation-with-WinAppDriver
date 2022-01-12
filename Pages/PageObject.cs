@@ -11,8 +11,6 @@ namespace MSTestOverview.Pages
     class PageObject
     {
         public AppiumOptions appOptions;
-
-
         private WindowsDriver<WindowsElement> _element;
         public WindowsDriver<WindowsElement> Element{ get { return _element;}}
 
@@ -29,10 +27,9 @@ namespace MSTestOverview.Pages
             else
             {
                 _element = element;
-            }
-            
-            
+            } 
         }
+
         public void ClickInElementById(params string[] elements)
         {
             foreach(string element in elements)
@@ -45,6 +42,7 @@ namespace MSTestOverview.Pages
         {
             return _element.FindElementByAccessibilityId(element).Text;
         }
+
         public void CloseWindows()
         {
             _element.Quit();
