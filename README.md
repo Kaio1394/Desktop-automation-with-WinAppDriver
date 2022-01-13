@@ -43,7 +43,7 @@ public void ClickInElementById(params string[] elements)
 [TestMethod]
         public void TestMethodSum()
         {
-            page.ClickInElementById("num3Button", "plusButton", "num3Button", "equalButton");
+            page.ClickInElementOrElementsById("num3Button", "plusButton", "num3Button", "equalButton");
 
             Assert.AreEqual("A exibição é 6", page.ReturnTextOfElement("CalculatorResults"));
         }
