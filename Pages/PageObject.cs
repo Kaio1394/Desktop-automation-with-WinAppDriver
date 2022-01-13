@@ -1,6 +1,7 @@
 ﻿using MSTestOverview.ScreeShot;
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Windows;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,6 +36,7 @@ namespace MSTestOverview.Pages
         {
             foreach(string element in elements)
             {
+                //WebDriverWait wait = new WebDriverWait(_element, TimeSpan.FromSeconds(4));
                 _element.FindElementByAccessibilityId(element).Click();
             }
         }
@@ -55,6 +57,11 @@ namespace MSTestOverview.Pages
         {
             var shot = new ScreenShotRun(_element);
             shot.TakeScreenShot();
+        }
+        public void WaitUntil(WindowsDriver<WindowsElement> element, int time, string id)
+        {
+            WebDriverWait wait = new WebDriverWait(element, TimeSpan.FromSeconds(time));
+            wait.Until(a => element.FindElementByAccessibilityId(id).Displayed);
         }
     }
 }

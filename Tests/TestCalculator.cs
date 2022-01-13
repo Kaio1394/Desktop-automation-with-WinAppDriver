@@ -20,6 +20,7 @@ namespace MSTestOverview
             //Params
             page = new PageObject(null, "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App", "http://127.0.0.1:4723/");
         }
+        
         [TestCleanup]
         public void EndTest()
         {
@@ -31,6 +32,7 @@ namespace MSTestOverview
         public void TestMethodSum()
         {
             // Click in calculator elements
+            page.WaitUntil(page.Element, 4, "num3Button");
             page.ClickInElementOrElementsById("num3Button", "plusButton", "num3Button", "equalButton");
 
             Assert.AreEqual("A exibição é 6", page.ReturnTextOfElement("CalculatorResults"));
