@@ -46,7 +46,10 @@ namespace MSTestOverview.Pages
 
         public void CloseWindows()
         {
-            _element.Quit();
+            if(_element != null)
+            {
+                _element.Quit();
+            }
         }
         public void TakeScreenShot()
         {
