@@ -31,7 +31,7 @@ namespace MSTestOverview.Pages
             } 
         }
 
-        public void ClickInElementById(params string[] elements)
+        public void ClickInElementOrElementsById(params string[] elements)
         {
             foreach(string element in elements)
             {
