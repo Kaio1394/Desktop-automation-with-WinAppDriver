@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium.Appium;
+﻿using MSTestOverview.ScreeShot;
+using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Windows;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace MSTestOverview.Pages
 {
     class PageObject
     {
-        public AppiumOptions appOptions;
+        private AppiumOptions appOptions;
         private WindowsDriver<WindowsElement> _element;
         public WindowsDriver<WindowsElement> Element{ get { return _element;}}
 
@@ -46,6 +47,11 @@ namespace MSTestOverview.Pages
         public void CloseWindows()
         {
             _element.Quit();
+        }
+        public void TakeScreenShot()
+        {
+            var shot = new ScreenShotRun(_element);
+            shot.TakeScreenShot();
         }
     }
 }
