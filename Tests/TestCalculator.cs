@@ -13,7 +13,6 @@ namespace MSTestOverview
     {
         private PageObject page;
         
-       
         [TestInitialize]
         public void Start()
         {
