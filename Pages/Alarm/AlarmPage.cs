@@ -36,12 +36,15 @@ namespace MSTestOverview.Pages.Alarm
             this.SendKeysByName("minutos", minutes);
         }
 
-        public void SetNameTimer(string text)
+        public void SetNameTimerPlusRandoNumber(string text)
         {
             Random numAleatorio = new Random();
             this.SendKeysByClassName("TextBox", text + numAleatorio.Next(1, 20));
         }
-
+        public void SetNameTimer(string text)
+        {
+            this.SendKeysByClassName("TextBox", text);
+        }
         public void SetSeconds(string seconds)
         {
             this.SendKeysByName("segundos", seconds);
@@ -52,6 +55,28 @@ namespace MSTestOverview.Pages.Alarm
             this.ClickInElementOrElementsByName("Salvar");
         }
 
-        
+        public void ClickExcludeSecondItemTimer()
+        {
+            this.WaitUntilXPath(this.Element, 5, "/Window/Window[2]/Pane/List/ListItem[2]/Button[3]");
+            this.ClickInElementOrElementsByXPath("/Window/Window[2]/Pane/List/ListItem[2]/Button[3]");
+        }
+
+        public void ClickEditingTimerButtom()
+        {
+            this.WaitUntil(this.Element, 5, "EditTimersButton");
+            this.ClickInElementOrElementsById("EditTimersButton");
+        }
+
+        public void ClickSecondItemTimer()
+        {
+            try
+            {
+                this.ClickInElementOrElementsByXPath("/Window/Window[2]/Pane/List/ListItem[2]");
+            }
+            catch (Exception)
+            {
+                throw new Exception("Not second items in list view");
+            }          
+        }
     }
 }

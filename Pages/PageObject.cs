@@ -1,6 +1,7 @@
 ﻿using MSTestOverview.ScreeShot;
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Windows;
+using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
@@ -119,5 +120,6 @@ namespace MSTestOverview.Pages
             return this._element.PageSource.Contains(contains);
         }
 
+        
     }
 }

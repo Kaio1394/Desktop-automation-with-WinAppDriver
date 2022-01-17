@@ -43,7 +43,7 @@ namespace MSTestOverview.Tests
             page.SetHourMinuteSecond(values);
 
             // Timer name field
-            page.SetNameTimer("TTimer ");
+            page.SetNameTimerPlusRandoNumber("Timer");
 
             //Button Save
             page.ClickSaveNewTimer();
@@ -53,16 +53,23 @@ namespace MSTestOverview.Tests
         }
 
         [TestMethod]
-        public void EdtitingItemTimer()
+        public void EdtitingSecondItemTimer()
         {
+            // Click in item second in list view
+            page.ClickSecondItemTimer();
 
+            //Set timer name
+            page.SetNameTimer("Kaio");
         }
 
         [TestMethod]
-        public void ExcluingItemTimer()
+        public void ExcluingSecondItemTimer()
         {
-            
+            // Click in Edit buttom
+            page.ClickEditingTimerButtom();
 
+            // And exclude second element
+            page.ClickExcludeSecondItemTimer();
         }
 
     }
