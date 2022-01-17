@@ -61,6 +61,19 @@ namespace MSTestOverview.Pages
             return _element.FindElementByName(name);
         }
 
+        public WindowsElement ReturnWindowDriverElementByXPath(string xpath)
+        {
+            return _element.FindElementByXPath(xpath);
+        }
+        
+        public WindowsElement ReturnWindowDriverElementById(string id)
+        {
+            return _element.FindElementByXPath(id);
+        }
+        private WindowsElement ReturnWindowDriverElementByClassName(string className)
+        {
+            return _element.FindElementByClassName(className);
+        }
         public string ReturnTextOfElement(string element)
         {
             return _element.FindElementByAccessibilityId(element).Text;
@@ -84,6 +97,16 @@ namespace MSTestOverview.Pages
         {
             WebDriverWait wait = new WebDriverWait(element, TimeSpan.FromSeconds(time));
             wait.Until(a => element.FindElementByAccessibilityId(id).Displayed);
+        }
+
+        public void SendKeysByName(string name, string keys)
+        {
+            this.ReturnWindowDriverElementByName(name).SendKeys(keys);
+        }
+
+        public void SendKeysByClassName(string name, string keys)
+        {
+            this.ReturnWindowDriverElementByClassName(name).SendKeys(keys);
         }
         public void WaitUntilXPath(WindowsDriver<WindowsElement> element, int time, string xpath)
         {

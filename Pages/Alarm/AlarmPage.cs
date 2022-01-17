@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OpenQA.Selenium.Appium.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,10 +17,7 @@ namespace MSTestOverview.Pages.Alarm
         {
             this.ClickInElementOrElementsById("PART_Pane1ScrollViewer");
         }
-        public void SendKeysByName(string name, string keys)
-        {
-            this.ReturnWindowDriverElementByName(name).SendKeys(keys);
-        }
+        
 
         public void SetHourMinuteSecond(params string[] values)
         {
@@ -27,6 +25,7 @@ namespace MSTestOverview.Pages.Alarm
             this.SetMinutes(values[1]);
             this.SetSeconds(values[2]);
         }
+
 
         public void SetHour(string hour)
         {
@@ -36,14 +35,24 @@ namespace MSTestOverview.Pages.Alarm
         {
             this.SendKeysByName("minutos", minutes);
         }
+
+        public void SetNameTimer(string text)
+        {
+            this.SendKeysByClassName("TextBox", text);
+        }
+
+        
+
         public void SetSeconds(string seconds)
         {
             this.SendKeysByName("segundos", seconds);
         }
 
-        internal void ClickSaveNewTimer()
+        public void ClickSaveNewTimer()
         {
             this.ClickInElementOrElementsByName("Salvar");
         }
+
+        
     }
 }
