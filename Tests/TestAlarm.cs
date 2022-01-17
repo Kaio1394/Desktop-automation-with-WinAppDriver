@@ -35,6 +35,7 @@ namespace MSTestOverview.Tests
         [DataRow("14", "033", "015")]
         public void AddNewTimer(params string[] values)
         {
+            
             // Click in Buttom Add New Timer
             page.ClickInAddNewTimer();
 
@@ -42,25 +43,25 @@ namespace MSTestOverview.Tests
             page.SetHourMinuteSecond(values);
 
             // Timer name field
-            page.SetNameTimer("Timer");
+            page.SetNameTimer("TTimer ");
 
             //Button Save
             page.ClickSaveNewTimer();
-            
 
-            //Assert.AreEqual("s", page.ReturnTextOfElement("ListViewItem"));
+            //Assert.AreEqual("Timer", page.ReturnWindowDriverElementByXPath("/Window/Window[2]/Pane/List/ListItem[2]/Text").Text);
+            Assert.IsTrue(page.HasElementPage("/Window/Window[2]/Pane/List/ListItem[2]/Text", "Timer"));
         }
 
         [TestMethod]
         public void EdtitingItemTimer()
         {
-            
 
         }
 
         [TestMethod]
         public void ExcluingItemTimer()
         {
+            
 
         }
 

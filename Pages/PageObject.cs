@@ -70,13 +70,13 @@ namespace MSTestOverview.Pages
         {
             return _element.FindElementByXPath(id);
         }
-        private WindowsElement ReturnWindowDriverElementByClassName(string className)
+        public WindowsElement ReturnWindowDriverElementByClassName(string className)
         {
             return _element.FindElementByClassName(className);
         }
-        public string ReturnTextOfElement(string element)
+        public string ReturnTextOfElement(string id)
         {
-            return _element.FindElementByAccessibilityId(element).Text;
+            return _element.FindElementByAccessibilityId(id).Text;
         }
 
         public void CloseWindows()
@@ -113,5 +113,11 @@ namespace MSTestOverview.Pages
             WebDriverWait wait = new WebDriverWait(element, TimeSpan.FromSeconds(time));
             wait.Until(a => element.FindElementByXPath(xpath).Displayed);
         }
+
+        public bool HasElementPage(string xpath, string contains)
+        {
+            return this._element.PageSource.Contains(contains);
+        }
+
     }
 }

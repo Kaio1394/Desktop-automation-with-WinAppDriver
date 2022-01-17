@@ -15,7 +15,7 @@ namespace MSTestOverview.Pages.Alarm
         }
         public void ClickInAddNewTimer()
         {
-            this.ClickInElementOrElementsById("PART_Pane1ScrollViewer");
+            this.ClickInElementOrElementsById("AddTimerButton");
         }
         
 
@@ -38,10 +38,9 @@ namespace MSTestOverview.Pages.Alarm
 
         public void SetNameTimer(string text)
         {
-            this.SendKeysByClassName("TextBox", text);
+            Random numAleatorio = new Random();
+            this.SendKeysByClassName("TextBox", text + numAleatorio.Next(1, 20));
         }
-
-        
 
         public void SetSeconds(string seconds)
         {
