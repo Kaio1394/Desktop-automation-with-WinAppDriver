@@ -4,11 +4,7 @@ using OpenQA.Selenium.Appium.Windows;
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using YamlDotNet.Serialization;
+
 
 namespace MSTestOverview.Pages
 {
@@ -131,8 +127,6 @@ namespace MSTestOverview.Pages
             Actions action = new Actions(this._element);
             action.MoveToElement(element);
             action.DoubleClick();
-        }
-        
-        
+        } 
     }
 }
