@@ -80,6 +80,11 @@ namespace MSTestOverview.Pages
             return _element.FindElementByAccessibilityId(id).Text;
         }
 
+        public string ReturnTextOfElementByClassName(string className)
+        {
+            return _element.FindElementByClassName(className).Text;
+        }
+
         public void CloseWindows()
         {
             if(_element != null)
@@ -120,6 +125,14 @@ namespace MSTestOverview.Pages
             return this._element.PageSource.Contains(contains);
         }
 
+        public void DoubleClickElement()
+        {
+            var element = this.ReturnWindowDriverElementByXPath("/Window/Window[2]/Pane/List/ListItem[2]");
+            Actions action = new Actions(this._element);
+            action.MoveToElement(element);
+            action.DoubleClick();
+        }
+        
         
     }
 }

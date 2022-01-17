@@ -78,5 +78,9 @@ namespace MSTestOverview.Pages.Alarm
                 throw new Exception("Not second items in list view");
             }          
         }
+        public string ReturnTextBoxNameTimer()
+        {
+            return this.ReturnTextOfElementByClassName("TextBox");
+        }
     }
 }

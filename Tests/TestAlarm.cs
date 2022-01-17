@@ -53,13 +53,20 @@ namespace MSTestOverview.Tests
         }
 
         [TestMethod]
-        public void EdtitingSecondItemTimer()
+        public void EditingSecondItemTimer()
         {
+            string  name = "Kaio Timer";
             // Click in item second in list view
             page.ClickSecondItemTimer();
 
-            //Set timer name
-            page.SetNameTimer("Kaio");
+            //Setter timer name
+            page.SetNameTimer(name);
+           
+            page.ClickSaveNewTimer();
+
+            page.ClickSecondItemTimer();
+
+            Assert.AreEqual(name, page.ReturnTextBoxNameTimer());
         }
 
         [TestMethod]
