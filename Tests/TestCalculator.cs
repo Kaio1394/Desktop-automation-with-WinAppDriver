@@ -30,17 +30,17 @@ namespace MSTestOverview
         [TestMethod]
         public void TestMethodSum()
         {
-            // Click in calculator elements
+            // Click in calculator elements(3 + 3)
             page.WaitUntil(page.Element, 4, "num3Button");
-            page.ClickInElementOrElementsById("num3Button", "plusButton", "num3Button", "equalButton");
+            page.MakeSumThreePlusThree();
 
             Assert.AreEqual("A exibição é 6", page.ReturnTextOfElement("CalculatorResults"));
         }
         [TestMethod] 
         public void TestMethodMinus()
         {
-            // Click in calculator elements
-            page.ClickInElementOrElementsById("num3Button", "minusButton", "num3Button", "equalButton");
+            // Click in calculator elements(3 - 3)
+            page.MakeSumThreeMinusThree();
 
             Assert.AreEqual("A exibição é 0", page.ReturnTextOfElement("CalculatorResults"));
         }

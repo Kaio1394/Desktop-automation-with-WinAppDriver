@@ -23,9 +23,9 @@ namespace MSTestOverview.Pages
             //http://127.0.0.1:4723/
             if(element == null)
             {
-                appOptions = new AppiumOptions();
-                appOptions.AddAdditionalCapability("app", propertyElement);
-                _element = new WindowsDriver<WindowsElement>(new Uri(uriDriver), appOptions);
+                this.appOptions = new AppiumOptions();
+                this.appOptions.AddAdditionalCapability("app", propertyElement);
+                this._element = new WindowsDriver<WindowsElement>(new Uri(uriDriver), appOptions);
                 //_element.Manage().Window.Maximize();
             }
             else
