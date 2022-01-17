@@ -13,7 +13,7 @@ namespace MSTestOverview
     public class TestCalculator
     {
         private CalculatorPage page;
-              
+               
         [TestInitialize]
         public void Start()
         {
