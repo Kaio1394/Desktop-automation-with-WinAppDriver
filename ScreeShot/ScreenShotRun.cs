@@ -18,6 +18,6 @@ namespace MSTestOverview.ScreeShot
         }
 
         public void TakeScreenShot() => 
-            Elemento.GetScreenshot().SaveAsFile($".\\Screenshot{DateTime.Now.ToString("ddMMyyyyhhmmss")}.png", ScreenshotImageFormat.Png);        
+            Elemento.GetScreenshot().SaveAsFile($".\\ScreenShot\\Screenshot{DateTime.Now.ToString("ddMMyyyyhhmmss")}.png", ScreenshotImageFormat.Png);        
     }
 }

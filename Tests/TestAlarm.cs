@@ -25,10 +25,24 @@ namespace MSTestOverview.Tests
             page.TakeScreenShot();
             page.CloseWindows();
         }
-        [TestMethod]
-        public void Alarm()
-        {
 
+        [TestMethod]
+        [DataRow("04", "031", "028")]
+        [DataRow("08", "010", "029")]
+        [DataRow("14", "033", "015")]
+        public void AddNewTimer(params string[] values)
+        {
+            // Click in Buttom Add New Timer
+            page.ClickInAddNewTimer();
+
+            // Setter hours, minutes and seconds
+            page.SetHourMinuteSecond(values);
+            
+            //Button Save
+            page.ClickSaveNewTimer();
+
+            Assert.AreEqual("s", page.ReturnTextOfElement("ListViewItem"));
         }
+
     }
 }

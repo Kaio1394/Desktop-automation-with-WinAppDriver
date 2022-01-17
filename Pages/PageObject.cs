@@ -39,9 +39,26 @@ namespace MSTestOverview.Pages
         {
             foreach(string element in elements)
             {
-                //WebDriverWait wait = new WebDriverWait(_element, TimeSpan.FromSeconds(4));
                 _element.FindElementByAccessibilityId(element).Click();
             }
+        }
+        public void ClickInElementOrElementsByXPath(params string[] elements)
+        {
+            foreach(string element in elements)
+            {
+                _element.FindElementByXPath(element).Click();
+            }
+        }
+        public void ClickInElementOrElementsByName(params string[] elements)
+        {
+            foreach(string element in elements)
+            {
+                _element.FindElementByName(element).Click();
+            }
+        }
+        public WindowsElement ReturnWindowDriverElementByName(string name)
+        {
+            return _element.FindElementByName(name);
         }
 
         public string ReturnTextOfElement(string element)
@@ -67,6 +84,11 @@ namespace MSTestOverview.Pages
         {
             WebDriverWait wait = new WebDriverWait(element, TimeSpan.FromSeconds(time));
             wait.Until(a => element.FindElementByAccessibilityId(id).Displayed);
+        }
+        public void WaitUntilXPath(WindowsDriver<WindowsElement> element, int time, string xpath)
+        {
+            WebDriverWait wait = new WebDriverWait(element, TimeSpan.FromSeconds(time));
+            wait.Until(a => element.FindElementByXPath(xpath).Displayed);
         }
     }
 }

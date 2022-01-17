@@ -12,5 +12,38 @@ namespace MSTestOverview.Pages.Alarm
         {
 
         }
+        public void ClickInAddNewTimer()
+        {
+            this.ClickInElementOrElementsById("PART_Pane1ScrollViewer");
+        }
+        public void SendKeysByName(string name, string keys)
+        {
+            this.ReturnWindowDriverElementByName(name).SendKeys(keys);
+        }
+
+        public void SetHourMinuteSecond(params string[] values)
+        {
+            this.SetHour(values[0]);
+            this.SetMinutes(values[1]);
+            this.SetSeconds(values[2]);
+        }
+
+        public void SetHour(string hour)
+        {
+            this.SendKeysByName("horas", hour);
+        }
+        public void SetMinutes(string minutes)
+        {
+            this.SendKeysByName("minutos", minutes);
+        }
+        public void SetSeconds(string seconds)
+        {
+            this.SendKeysByName("segundos", seconds);
+        }
+
+        internal void ClickSaveNewTimer()
+        {
+            this.ClickInElementOrElementsByName("Salvar");
+        }
     }
 }

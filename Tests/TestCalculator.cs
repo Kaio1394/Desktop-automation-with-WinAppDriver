@@ -41,7 +41,7 @@ namespace MSTestOverview
         {
             // Click in calculator elements(3 - 3)
             page.MakeSumThreeMinusThree();
-
+            
             Assert.AreEqual("A exibição é 0", page.ReturnTextOfElement("CalculatorResults"));
         }
     }
