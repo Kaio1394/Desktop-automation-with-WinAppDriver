@@ -72,11 +72,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\Alarm\AlarmPage.cs" />
     <Compile Include="Pages\Calculator\CalculatorPage.cs" />
-    <Compile Include="Pages\Calculator\CalculatorPageBase.cs" />
     <Compile Include="Pages\PageObject.cs" />
     <Compile Include="ScreeShot\ScreenShotRun.cs" />
-    <Compile Include="Tests\AlarmTest.cs" />
+    <Compile Include="Tests\TestAlarm.cs" />
     <Compile Include="Tests\TestCalculator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
