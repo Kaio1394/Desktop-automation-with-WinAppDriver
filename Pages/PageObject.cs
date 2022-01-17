@@ -7,10 +7,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using YamlDotNet.Serialization;
 
 namespace MSTestOverview.Pages
 {
-    class PageObject
+    public class PageObject
     {
         private AppiumOptions appOptions;
         private WindowsDriver<WindowsElement> _element;
@@ -25,12 +26,14 @@ namespace MSTestOverview.Pages
                 appOptions = new AppiumOptions();
                 appOptions.AddAdditionalCapability("app", propertyElement);
                 _element = new WindowsDriver<WindowsElement>(new Uri(uriDriver), appOptions);
+                //_element.Manage().Window.Maximize();
             }
             else
             {
                 _element = element;
             } 
         }
+
 
         public void ClickInElementOrElementsById(params string[] elements)
         {
@@ -53,11 +56,13 @@ namespace MSTestOverview.Pages
                 _element.Quit();
             }
         }
+
         public void TakeScreenShot()
         {
             var shot = new ScreenShotRun(_element);
             shot.TakeScreenShot();
         }
+
         public void WaitUntil(WindowsDriver<WindowsElement> element, int time, string id)
         {
             WebDriverWait wait = new WebDriverWait(element, TimeSpan.FromSeconds(time));

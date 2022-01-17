@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MSTestOverview.Pages;
+using MSTestOverview.Pages.Calculator;
 using MSTestOverview.ScreeShot;
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Windows;
@@ -11,14 +12,12 @@ namespace MSTestOverview
     [TestClass]
     public class TestCalculator
     {
-        private PageObject page;
-        
-       
+        private CalculatorPage page;
+              
         [TestInitialize]
         public void Start()
         {
-            //Params
-            page = new PageObject(null, "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App", "http://127.0.0.1:4723/");
+            page = new CalculatorPage();           
         }
         
         [TestCleanup]

@@ -27,3 +27,5 @@ C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\Newtonsoft
 C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\WebDriver.xml
 C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\WebDriver.Support.xml
+C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\YamlDotNet.dll
+C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\YamlDotNet.xml
