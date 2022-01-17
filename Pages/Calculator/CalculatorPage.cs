@@ -10,7 +10,7 @@ namespace MSTestOverview.Pages.Calculator
 {
     public class CalculatorPage : PageObject
     {
-        public CalculatorPage () 
+        public CalculatorPage ()  
             : base(null, "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App", "http://127.0.0.1:4723/"){}
         
     }

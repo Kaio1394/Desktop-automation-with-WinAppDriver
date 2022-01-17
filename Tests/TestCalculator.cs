@@ -36,7 +36,7 @@ namespace MSTestOverview
 
             Assert.AreEqual("A exibição é 6", page.ReturnTextOfElement("CalculatorResults"));
         }
-        [TestMethod]
+        [TestMethod] 
         public void TestMethodMinus()
         {
             // Click in calculator elements
