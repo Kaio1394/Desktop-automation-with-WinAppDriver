@@ -82,5 +82,16 @@ namespace MSTestOverview.Pages.Alarm
         {
             return this.ReturnTextOfElementByClassName("TextBox");
         }
+
+        public void ClickAlarmBottom()
+        {
+            this.ClickInElementOrElementsById("AlarmButton");
+        }
+        
+        public void ClickAddNewAlarm()
+        {
+            this.WaitUntilXPath(this.Element, 4, "/Window/Window[2]/Pane/Button[2]");
+            this.ClickInElementOrElementsByXPath("/Window/Window[2]/Pane/Button[2]");
+        }
     }
 }

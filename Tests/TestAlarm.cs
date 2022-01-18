@@ -77,6 +77,17 @@ namespace MSTestOverview.Tests
 
             // And exclude second element
             page.ClickExcludeSecondItemTimer();
+
+        }
+        
+        [TestMethod]
+        public void AddNewAlarm()
+        {
+            // Click in alarm buttom
+            page.ClickAlarmBottom();
+
+            // And click add new alarm
+            page.ClickAddNewAlarm();
         }
     }
 }

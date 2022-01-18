@@ -81,7 +81,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="data.yaml" />
+    <None Include="data.yml" />
     <None Include="jsonData.json" />
     <None Include="packages.config" />
   </ItemGroup>
