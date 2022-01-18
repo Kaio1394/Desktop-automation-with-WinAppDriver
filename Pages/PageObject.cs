@@ -121,12 +121,12 @@ namespace MSTestOverview.Pages
             return this._element.PageSource.Contains(contains);
         }
 
-        public void DoubleClickElement()
+        public void DoubleClickElement(string xpath)
         {
-            var element = this.ReturnWindowDriverElementByXPath("/Window/Window[2]/Pane/List/ListItem[2]");
+            var element = this.ReturnWindowDriverElementByXPath(xpath);
             Actions action = new Actions(this._element);
-            action.MoveToElement(element);
-            action.DoubleClick();
+            action.MoveToElement(element).ContextClick();
+            action.DoubleClick().Perform();
         } 
     }
 }

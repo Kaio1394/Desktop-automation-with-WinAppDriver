@@ -78,6 +78,5 @@ namespace MSTestOverview.Tests
             // And exclude second element
             page.ClickExcludeSecondItemTimer();
         }
-
     }
 }
