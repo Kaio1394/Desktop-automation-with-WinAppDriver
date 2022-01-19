@@ -55,9 +55,16 @@ namespace MSTestOverview.Pages.Alarm
             this.SendKeysByName("segundos", seconds);
         }
 
-        public void ClickSaveNewTimer()
+        public void ClickSaveNewTimerOrTimer(string alaramOrTimer)
         {
-            this.ClickInElementOrElementsByName("Salvar");
+            if(alaramOrTimer == "timer")
+            {
+                this.ClickInElementOrElementsByName("Salvar");
+                
+            }else if (alaramOrTimer == "alarm")
+            {
+                this.ClickInElementOrElementsById("SaveButton");
+            }
         }
 
         public void ClickExcludeSecondItemTimer()
@@ -86,6 +93,11 @@ namespace MSTestOverview.Pages.Alarm
         public string ReturnTextBoxNameTimer()
         {
             return this.ReturnTextOfElementByClassName("TextBox");
+        }
+
+        internal void ChooseDayWeekend(string day)
+        {
+            this.ClickInElementOrElementsByName(day);
         }
 
         internal void ChooseAlarmMusic(string music)

@@ -46,7 +46,7 @@ namespace MSTestOverview.Tests
             page.SetNameTimerPlusRandoNumber("Timer");
 
             //Button Save
-            page.ClickSaveNewTimer();
+            page.ClickSaveNewTimerOrTimer("timer");
 
             //Assert.AreEqual("Timer", page.ReturnWindowDriverElementByXPath("/Window/Window[2]/Pane/List/ListItem[2]/Text").Text);
             Assert.IsTrue(page.HasElementPage("/Window/Window[2]/Pane/List/ListItem[2]/Text", "Timer"));
@@ -62,7 +62,7 @@ namespace MSTestOverview.Tests
             //Setter timer name
             page.SetNameTimerOrAlarm(name);
            
-            page.ClickSaveNewTimer();
+            page.ClickSaveNewTimerOrTimer("timer");
 
             page.ClickSecondItemTimer();
 
@@ -95,11 +95,16 @@ namespace MSTestOverview.Tests
             // Setter hour and minutes
             page.SetHourAndMinutesAlarm("10", "20");
 
+            // Options: Segunda-feira, Terça-feira, Quarta-feira, Quinta-feira, Sexta-feira, sábado and Domingo.
+            page.ChooseDayWeekend("Domingo");
+
             //Music options: Alarmes, Xilofones, Acordes, Toque, Jingle, Transição, Decrescente, Quico, Eco e Crescente.
             page.ChooseAlarmMusic("Transição");
 
             // Options: (5, "minutos"), (10, "minutos"), (20, "minutos"), (30, "minutos") or (1, "hora").
             page.ChooseRepeatTime(5, "minutos");
+
+            page.ClickSaveNewTimerOrTimer("alarm");
 
         }
     }
