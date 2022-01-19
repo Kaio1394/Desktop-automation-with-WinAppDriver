@@ -16,8 +16,7 @@ namespace MSTestOverview.Pages
 
         public PageObject(WindowsDriver<WindowsElement> element, string propertyElement, string uriDriver)
         {
-            //Microsoft.WindowsCalculator_8wekyb3d8bbwe!App
-            //http://127.0.0.1:4723/
+
             if(element == null)
             {
                 this.appOptions = new AppiumOptions();
