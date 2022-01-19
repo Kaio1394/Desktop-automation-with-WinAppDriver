@@ -25,6 +25,11 @@ namespace MSTestOverview.Pages.Alarm
             this.SetMinutes(values[1]);
             this.SetSeconds(values[2]);
         }
+        public void SetHourAndMinutesAlarm(params string[] values)
+        {
+            this.SetHour(values[0]);
+            this.SetMinutes(values[1]);
+        }
 
 
         public void SetHour(string hour)
@@ -41,7 +46,7 @@ namespace MSTestOverview.Pages.Alarm
             Random numAleatorio = new Random();
             this.SendKeysByClassName("TextBox", text + numAleatorio.Next(1, 20));
         }
-        public void SetNameTimer(string text)
+        public void SetNameTimerOrAlarm(string text)
         {
             this.SendKeysByClassName("TextBox", text);
         }

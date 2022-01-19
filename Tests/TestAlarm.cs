@@ -60,7 +60,7 @@ namespace MSTestOverview.Tests
             page.ClickSecondItemTimer();
 
             //Setter timer name
-            page.SetNameTimer(name);
+            page.SetNameTimerOrAlarm(name);
            
             page.ClickSaveNewTimer();
 
@@ -88,6 +88,12 @@ namespace MSTestOverview.Tests
 
             // And click add new alarm
             page.ClickAddNewAlarm();
+
+            // Setter alarm name
+            page.SetNameTimerOrAlarm("kaio");
+
+            // Setter hour and minutes
+            page.SetHourAndMinutesAlarm("10", "20");
         }
     }
 }
