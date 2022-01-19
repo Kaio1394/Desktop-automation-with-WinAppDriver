@@ -88,6 +88,19 @@ namespace MSTestOverview.Pages.Alarm
             return this.ReturnTextOfElementByClassName("TextBox");
         }
 
+        internal void ChooseAlarmMusic(string music)
+        {
+            this.ClickInElementOrElementsById("ChimeComboBox");
+            this.ClickInElementOrElementsByName(music);    
+        }
+
+        internal void ChooseRepeatTime(int time, string hourOrMinutes)
+        {
+            this.ClickInElementOrElementsById("SnoozeComboBox");
+            var repeatTime = $"{time} " + hourOrMinutes;
+            this.ClickInElementOrElementsByName(repeatTime);
+        }
+
         public void ClickAlarmBottom()
         {
             this.ClickInElementOrElementsById("AlarmButton");

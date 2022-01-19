@@ -94,6 +94,13 @@ namespace MSTestOverview.Tests
 
             // Setter hour and minutes
             page.SetHourAndMinutesAlarm("10", "20");
+
+            //Music options: Alarmes, Xilofones, Acordes, Toque, Jingle, Transição, Decrescente, Quico, Eco e Crescente.
+            page.ChooseAlarmMusic("Transição");
+
+            // Options: (5, "minutos"), (10, "minutos"), (20, "minutos"), (30, "minutos") or (1, "hora").
+            page.ChooseRepeatTime(5, "minutos");
+
         }
     }
 }
