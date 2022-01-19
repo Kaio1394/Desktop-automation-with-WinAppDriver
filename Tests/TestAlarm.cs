@@ -55,18 +55,18 @@ namespace MSTestOverview.Tests
         [TestMethod]
         public void EditingSecondItemTimer()
         {
-            string  name = "Kaio Timer";
             // Click in item second in list view
             page.ClickSecondItemTimer();
 
             //Setter timer name
-            page.SetNameTimerOrAlarm(name);
+            page.SetNameTimerOrAlarm("Kaio Timer");
            
+            // Bottom save timer 
             page.ClickSaveNewTimerOrTimer("timer");
 
             page.ClickSecondItemTimer();
 
-            Assert.AreEqual(name, page.ReturnTextBoxNameTimer());
+            Assert.AreEqual("Kaio Timer", page.ReturnTextBoxNameTimer());
         }
 
         [TestMethod]
@@ -98,13 +98,22 @@ namespace MSTestOverview.Tests
             // Options: Segunda-feira, Terça-feira, Quarta-feira, Quinta-feira, Sexta-feira, sábado and Domingo.
             page.ChooseDayWeekend("Domingo");
 
-            //Music options: Alarmes, Xilofones, Acordes, Toque, Jingle, Transição, Decrescente, Quico, Eco e Crescente.
+            // Music options: Alarmes, Xilofones, Acordes, Toque, Jingle, Transição, Decrescente, Quico, Eco e Crescente.
             page.ChooseAlarmMusic("Transição");
 
             // Options: (5, "minutos"), (10, "minutos"), (20, "minutos"), (30, "minutos") or (1, "hora").
             page.ChooseRepeatTime(5, "minutos");
 
             page.ClickSaveNewTimerOrTimer("alarm");
+
+        }
+        [TestMethod]
+        public void AddWorldClock()
+        {
+            // World Clock Bottom
+            page.ClickWorldClock();
+
+
 
         }
     }

@@ -11,7 +11,7 @@ namespace MSTestOverview.Pages.Alarm
     {
         public AlarmPage() : base(null, "Microsoft.WindowsAlarms_8wekyb3d8bbwe!App", "http://127.0.0.1:4723/")
         {
-
+            // PageObject(WindowsDriver<WindowsElement> element, string propertyElement, string uriDriver)
         }
         public void ClickInAddNewTimer()
         {
@@ -122,6 +122,11 @@ namespace MSTestOverview.Pages.Alarm
         {
             this.WaitUntilXPath(this.Element, 4, "/Window/Window[2]/Pane/Button[2]");
             this.ClickInElementOrElementsByXPath("/Window/Window[2]/Pane/Button[2]");
+        }
+        public void ClickWorldClock()
+        {
+            this.ClickInElementOrElementsByXPath("/Window/Window[2]/Custom/Window/Pane/Group/ListItem[3]");
+
         }
     }
 }
