@@ -113,6 +113,11 @@ namespace MSTestOverview.Pages.Alarm
             this.ClickInElementOrElementsByName(repeatTime);
         }
 
+        internal void ClickCardWorldClock()
+        {
+            this.RightClickElement("/Window/Window[2]/Pane/List/ListItem[2]");
+        }
+
         public void ClickAlarmBottom()
         {
             this.ClickInElementOrElementsById("AlarmButton");
@@ -126,7 +131,6 @@ namespace MSTestOverview.Pages.Alarm
         public void ClickWorldClock()
         {
             this.ClickInElementOrElementsByXPath("/Window/Window[2]/Custom/Window/Pane/Group/ListItem[3]");
-
         }
     }
 }

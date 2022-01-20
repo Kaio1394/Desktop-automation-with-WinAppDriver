@@ -112,7 +112,9 @@ namespace MSTestOverview.Tests
         {
             // World Clock Bottom
             page.ClickWorldClock();
-
+           
+            page.ClickCardWorldClock();
+            Thread.Sleep(3000);
 
 
         }

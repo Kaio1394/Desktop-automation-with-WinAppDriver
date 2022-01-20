@@ -124,8 +124,23 @@ namespace MSTestOverview.Pages
         {
             var element = this.ReturnWindowDriverElementByXPath(xpath);
             Actions action = new Actions(this._element);
-            action.MoveToElement(element).ContextClick();
+            action.ContextClick(element);
             action.DoubleClick().Perform();
-        } 
+        }
+
+        public void RightClickElement(string xpath)
+        {
+            var element = this.ReturnWindowDriverElementByXPath(xpath);
+            Actions action = new Actions(this._element);
+            action.ContextClick(element);
+            action.Perform();
+
+            //PageObject sessionDesktop = new PageObject(null, "Microsoft.WindowsAlarms_8wekyb3d8bbwe!App", "http://127.0.0.1:4723/");
+            //var contextItemDelete = sessionDesktop.ReturnWindowDriverElementById("ContextMenuDelete");
+
+            //this.WaitUntil(this._element, 5, "ContextMenuDelete");
+
+            //contextItemDelete.Click();
+        }
     }
 }
