@@ -99,20 +99,34 @@ namespace MSTestOverview.Pages
             WebDriverWait wait = new WebDriverWait(element, TimeSpan.FromSeconds(time));
             wait.Until(a => element.FindElementByAccessibilityId(id).Displayed);
         }
+        public void WaitUntilXPath(WindowsDriver<WindowsElement> element, int time, string xpath)
+        {
+            WebDriverWait wait = new WebDriverWait(element, TimeSpan.FromSeconds(time));
+            wait.Until(a => element.FindElementByXPath(xpath).Displayed);
+        }
+        public void WaitUntilName(WindowsDriver<WindowsElement> element, int time, string name)
+        {
+            WebDriverWait wait = new WebDriverWait(element, TimeSpan.FromSeconds(time));
+            wait.Until(a => element.FindElementByName(name).Displayed);
+        }
 
         public void SendKeysByName(string name, string keys)
         {
             this.ReturnWindowDriverElementByName(name).SendKeys(keys);
         }
-
+        
         public void SendKeysByClassName(string name, string keys)
         {
             this.ReturnWindowDriverElementByClassName(name).SendKeys(keys);
         }
-        public void WaitUntilXPath(WindowsDriver<WindowsElement> element, int time, string xpath)
+        
+        public void SendKeysById(string id, string keys)
         {
-            WebDriverWait wait = new WebDriverWait(element, TimeSpan.FromSeconds(time));
-            wait.Until(a => element.FindElementByXPath(xpath).Displayed);
+            this.ReturnWindowDriverElementById(id).SendKeys(keys);
+        }
+        public void SendKeysByXPath(string xpath, string keys)
+        {
+            this.ReturnWindowDriverElementByXPath(xpath).SendKeys(keys);
         }
 
         public bool HasElementPage(string xpath, string contains)
@@ -134,13 +148,6 @@ namespace MSTestOverview.Pages
             Actions action = new Actions(this._element);
             action.ContextClick(element);
             action.Perform();
-
-            //PageObject sessionDesktop = new PageObject(null, "Microsoft.WindowsAlarms_8wekyb3d8bbwe!App", "http://127.0.0.1:4723/");
-            //var contextItemDelete = sessionDesktop.ReturnWindowDriverElementById("ContextMenuDelete");
-
-            //this.WaitUntil(this._element, 5, "ContextMenuDelete");
-
-            //contextItemDelete.Click();
         }
     }
 }

@@ -104,6 +104,7 @@ namespace MSTestOverview.Tests
             // Options: (5, "minutos"), (10, "minutos"), (20, "minutos"), (30, "minutos") or (1, "hora").
             page.ChooseRepeatTime(5, "minutos");
 
+            // Save
             page.ClickSaveNewTimerOrTimer("alarm");
 
         }
@@ -112,10 +113,28 @@ namespace MSTestOverview.Tests
         {
             // World Clock Bottom
             page.ClickWorldClock();
-           
-            page.ClickCardWorldClock();
-            Thread.Sleep(3000);
 
+            // Add new world clock
+            page.ClickAddNewWorldClock();
+
+            // Setter country
+            page.SetNameWorldClock("São Paulo");
+
+            Thread.Sleep(5000);
+
+        }
+
+        [TestMethod]
+        public void DeleteWorldClock()
+        {
+            // World Clock Bottom
+            page.ClickWorldClock();
+           
+            // Click in card to delete
+            page.ClickCardWorldClock();
+
+            // Click in delete
+            page.ClickDeleteCardWorldCLock();
 
         }
     }

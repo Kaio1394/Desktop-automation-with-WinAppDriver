@@ -95,7 +95,7 @@ namespace MSTestOverview.Pages.Alarm
             return this.ReturnTextOfElementByClassName("TextBox");
         }
 
-        internal void ChooseDayWeekend(string day)
+        public void ChooseDayWeekend(string day)
         {
             this.ClickInElementOrElementsByName(day);
         }
@@ -106,18 +106,30 @@ namespace MSTestOverview.Pages.Alarm
             this.ClickInElementOrElementsByName(music);    
         }
 
-        internal void ChooseRepeatTime(int time, string hourOrMinutes)
+        public void ChooseRepeatTime(int time, string hourOrMinutes)
         {
             this.ClickInElementOrElementsById("SnoozeComboBox");
             var repeatTime = $"{time} " + hourOrMinutes;
             this.ClickInElementOrElementsByName(repeatTime);
         }
 
+        public void SetNameWorldClock(string country)
+        {
+            this.WaitUntilName(this.Element, 5, "Inserir um local");
+            this.SendKeysByName("Inserir um local", country);
+            this.ClickInElementOrElementsById("SuggestionsList");
+        }
+
+        internal void ClickAddNewWorldClock()
+        {
+            this.ClickInElementOrElementsById("AddClockButton");
+        }
+
         internal void ClickCardWorldClock()
         {
             this.RightClickElement("/Window/Window[2]/Pane/List/ListItem[2]");
         }
-
+        
         public void ClickAlarmBottom()
         {
             this.ClickInElementOrElementsById("AlarmButton");
@@ -131,6 +143,11 @@ namespace MSTestOverview.Pages.Alarm
         public void ClickWorldClock()
         {
             this.ClickInElementOrElementsByXPath("/Window/Window[2]/Custom/Window/Pane/Group/ListItem[3]");
+        }
+
+        public void ClickDeleteCardWorldCLock()
+        {
+            this.ClickInElementOrElementsById("ContextMenuDelete");
         }
     }
 }
