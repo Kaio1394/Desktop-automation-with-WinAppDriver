@@ -53,6 +53,33 @@ This is a little automation with WinAppDriver and the framework MSTest using Pag
     }
         
 ```
+- In the folder "\bin\debug\" open vs terminal and digit: ```vstest.console.exe <MSTestOverview.dll> /logger:trx``` to see test results.
+- Output terminal: 
+```
+Ferramenta de Linha de Comando de Execução de Teste da Microsoft (R) Versão 16.11.0
+Copyright (c) Microsoft Corporation. Todos os direitos reservados.
+
+Iniciando execução de teste, espere...
+1 arquivos de teste no total corresponderam ao padrão especificado.
+  Aprovado TestMethodSum [2 s]
+  Aprovado TestMethodMinus [2 s]
+  Aprovado AddNewTimer [12 s]
+  Aprovado AddNewTimer (04,031,028) [4 s]
+  Aprovado AddNewTimer (08,010,029) [4 s]
+  Aprovado AddNewTimer (14,033,015) [4 s]
+  Aprovado EditingSecondItemTimer [3 s]
+  Aprovado ExcluingSecondItemTimer [2 s]
+  Aprovado AddNewAlarm [6 s]
+  Aprovado AddWorldClock [5 s]
+  Aprovado DeleteWorldClock [2 s]
+Arquivo de resultados: C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\TestResults\Usuario_DESKTOP-AF03160_2022-01-21_18_37_42.trx
+
+Execução de Teste Bem-sucedida.
+Total de testes: 10
+     Aprovados: 10
+Tempo total: 38,1124 Segundos
+```
+
 
 ***Study source:***
 - Udemy plataform: https://www.udemy.com/course/appium-winappdriver-automation-testing/.
