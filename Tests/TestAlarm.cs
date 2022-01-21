@@ -1,7 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MSTestOverview.Pages.Alarm;
+using MSTestOverview.ScreeShot;
 using OpenQA.Selenium.Appium.Windows;
 using OpenQA.Selenium.Interactions;
+using OpenQA.Selenium.Support.PageObjects;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -16,8 +18,10 @@ namespace MSTestOverview.Tests
     [TestClass]
     public class TestAlarm
     {
+        public TestContext TestContext { get; set; }
         private AlarmPage page;
 
+        
         [TestInitialize]
         public void Start()
         {
@@ -27,6 +31,8 @@ namespace MSTestOverview.Tests
         public void EndTest()
         {
             page.TakeScreenShot();
+            Boolean boolFailFlag = false;
+            Report.extent.Flush();
             page.CloseWindows();
         }
 
@@ -141,5 +147,21 @@ namespace MSTestOverview.Tests
             page.ClickDeleteCardWorldCLock();
 
         }
+
+        // Report
+        [TestMethod, TestCategory("ExtentTest")]
+        public void ExtentTestCasePass()
+        {
+            Report.ReportLogger(TestContext.TestName);
+            Report.exParentTest = Report.extent.CreateTest(TestContext.TestName);
+            Report.exChildTest = Report.exParentTest.CreateNode("Provide parameter 1");
+            Report.exChildTest.Log(AventStack.ExtentReports.Status.Pass, "Passed1");
+            int a = 10;
+            int b = 15;
+            int c = a + b;
+            Report.exChildTest = Report.exParentTest.CreateNode("Add parameters 1");
+            Report.exChildTest.Log(AventStack.ExtentReports.Status.Pass, "Passed1");
+        }
+        
     }
 }
