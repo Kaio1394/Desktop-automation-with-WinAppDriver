@@ -36,7 +36,8 @@ namespace MSTestOverview.Tests
         [DataRow("14", "033", "015")]
         public void AddNewTimer(params string[] values)
         {
-            
+            page.ClickTimerButtom();
+
             // Click in Buttom Add New Timer
             page.ClickInAddNewTimer();
 

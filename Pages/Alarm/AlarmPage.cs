@@ -31,6 +31,10 @@ namespace MSTestOverview.Pages.Alarm
             this.SetMinutes(values[1]);
         }
 
+        internal void ClickTimerButtom()
+        {
+            this.ClickInElementOrElementsById("TimerButton");
+        }
 
         public void SetHour(string hour)
         {
