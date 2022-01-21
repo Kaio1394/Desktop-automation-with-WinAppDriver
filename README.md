@@ -6,11 +6,12 @@ This is a little automation with WinAppDriver and the framework MSTest using Pag
 - Microsoft Visual Studio 2019.
 - WinAppDriver v1.2.1
 - WinAppDriver UI Recorder v1.1
+- Appium Server GUI windows v1.15.1
 
 ***Installation:***
 - Access a page https://visualstudio.microsoft.com/pt-br/vs/older-downloads/ and downloading Microsoft Visual Studio 2019.
 - Access a page https://github.com/microsoft/WinAppDriver/releases downloading WinAppDriver.exe and WinAppDriverUiRecorder to map elements.
-- After that, make mapping with  WinAppDriver UI Recorder, in this case to calculator: ``` "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" ``` through constructor class Page Object:
+- After that, make mapping with WinAppDriver UI Recorder or Appium Serve, in this case to calculator and Windows Alarm Clock: ``` "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" ```, ``` "Microsoft.WindowsAlarms_8wekyb3d8bbwe!App" ``` through constructor class Page Object:
 ```C#
  public PageObject(WindowsDriver<WindowsElement> element, string propertyElement, string uriDriver)
         {
@@ -29,24 +30,28 @@ This is a little automation with WinAppDriver and the framework MSTest using Pag
         }
         
 ```
-- Also its done mapping calculator elements Id to calculate sum(3 + 3): "num3Button", "plusButton", "num3Button", "equalButton" and done a assert to validate test:
-```C#
-public void ClickInElementById(params string[] elements)
-        {
-            foreach(string element in elements)
-            {
-                _element.FindElementByAccessibilityId(element).Click();
-            }
-        }
-```
-```C#
-[TestMethod]
-        public void TestMethodSum()
-        {
-            page.ClickInElementOrElementsById("num3Button", "plusButton", "num3Button", "equalButton");
+- Create two class, AlarmPage and CalculatorPage, that inherit PageObject:
 
-            Assert.AreEqual("A exibição é 6", page.ReturnTextOfElement("CalculatorResults"));
+```C#
+ class AlarmPage : PageObject
+    {
+        public AlarmPage() : base(null, "Microsoft.WindowsAlarms_8wekyb3d8bbwe!App", "http://127.0.0.1:4723/")
+        {
+            // PageObject(WindowsDriver<WindowsElement> element, string propertyElement, string uriDriver)
         }
+    }
+        
+```
+
+```C#
+ class CalculatorPage : PageObject
+    {
+        public CalculatorPage() : base(null, "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App", "http://127.0.0.1:4723/")
+        {
+            // PageObject(WindowsDriver<WindowsElement> element, string propertyElement, string uriDriver)
+        }
+    }
+        
 ```
 
 ***Study source:***
