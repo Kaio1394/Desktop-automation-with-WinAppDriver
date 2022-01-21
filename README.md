@@ -53,7 +53,7 @@ This is a little automation with WinAppDriver and the framework MSTest using Pag
     }
         
 ```
-- In the folder "\bin\debug\" open vs terminal and digit: "vstest.console.exe <MSTestOverview.dll> /logger:trx" to see test results.
+- In the folder "\bin\debug\" open vs terminal and digit: ```vstest.console.exe <MSTestOverview.dll> /logger:trx``` to see test results.
 ***Study source:***
 - Udemy plataform: https://www.udemy.com/course/appium-winappdriver-automation-testing/.
 
