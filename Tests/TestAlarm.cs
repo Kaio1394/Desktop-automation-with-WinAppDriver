@@ -17,6 +17,7 @@ namespace MSTestOverview.Tests
     public class TestAlarm
     {
         private AlarmPage page;
+
         [TestInitialize]
         public void Start()
         {
@@ -120,7 +121,9 @@ namespace MSTestOverview.Tests
             // Setter country
             page.SetNameWorldClock("São Paulo");
 
-            Thread.Sleep(5000);
+            page.ClickAddNewWorldClock();
+
+            page.SetNameWorldClock("Belo Horizonte");
 
         }
 
