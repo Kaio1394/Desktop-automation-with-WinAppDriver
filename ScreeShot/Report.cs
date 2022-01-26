@@ -19,7 +19,7 @@ namespace MSTestOverview.ScreeShot
         {
             extent = new ExtentReports();
             var dir = AppDomain.CurrentDomain.BaseDirectory.Replace("\\bin\\Debug", "");
-
+            
             Directory.CreateDirectory(dir + "\\Test_Executation_Reports\\");
 
             Random rand = new Random();

@@ -18,7 +18,7 @@ namespace MSTestOverview.Tests
     [TestClass]
     public class TestAlarm
     {
-        public TestContext TestContext { get; set; }
+        //public TestContext TestContext { get; set; }
         private AlarmPage page;
 
         
@@ -31,8 +31,8 @@ namespace MSTestOverview.Tests
         public void EndTest()
         {
             page.TakeScreenShot();
-            Boolean boolFailFlag = false;
-            Report.extent.Flush();
+            //Boolean boolFailFlag = false;
+            //Report.extent.Flush();
             page.CloseWindows();
         }
 
@@ -63,6 +63,8 @@ namespace MSTestOverview.Tests
         [TestMethod]
         public void EditingSecondItemTimer()
         {
+            page.ClickTimerButtom();
+
             // Click in item second in list view
             page.ClickSecondItemTimer();
 
@@ -149,20 +151,20 @@ namespace MSTestOverview.Tests
         }
 
         //Report
-        [TestMethod, TestCategory("ExtentTest")]
-        public void ExtentTestCasePass()
-        {
-            Report.ReportLogger(TestContext.TestName);
-            Report.exParentTest = Report.extent.CreateTest(TestContext.TestName);
-            Report.exChildTest = Report.exParentTest.CreateNode("Provide parameter 1");
-            Report.exChildTest.Log(AventStack.ExtentReports.Status.Pass, "Passed1");
-            DeleteWorldClock();
-            int a = 10;
-            int b = 15;
-            int c = a + b;
-            Report.exChildTest = Report.exParentTest.CreateNode("Add parameters 1");
-            Report.exChildTest.Log(AventStack.ExtentReports.Status.Pass, "Passed1");
-        }
+        //[TestMethod, TestCategory("ExtentTest")]
+        //public void ExtentTestCasePass()
+        //{
+        //    Report.ReportLogger(TestContext.TestName);
+        //    Report.exParentTest = Report.extent.CreateTest(TestContext.TestName);
+        //    Report.exChildTest = Report.exParentTest.CreateNode("Provide parameter 1");
+        //    Report.exChildTest.Log(AventStack.ExtentReports.Status.Pass, "Passed1");
+        //    DeleteWorldClock();
+        //    int a = 10;
+        //    int b = 15;
+        //    int c = a + b;
+        //    Report.exChildTest = Report.exParentTest.CreateNode("Add parameters 1");
+        //    Report.exChildTest.Log(AventStack.ExtentReports.Status.Pass, "Passed1");
+        //}
 
     }
 }

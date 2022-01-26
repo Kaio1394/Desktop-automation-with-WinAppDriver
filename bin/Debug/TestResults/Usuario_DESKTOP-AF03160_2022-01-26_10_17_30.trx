@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="83b4bb2c-3238-4209-b921-02f9a8909fdc" name="Usuario@DESKTOP-AF03160 2022-01-26 10:17:30" runUser="DESKTOP-AF03160\Usuario" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2022-01-26T10:17:30.3198589-03:00" queuing="2022-01-26T10:17:30.3198589-03:00" start="2022-01-26T10:17:24.2412304-03:00" finish="2022-01-26T10:19:16.1351162-03:00" />
+  <TestSettings name="default" id="f4b05441-723f-4677-b337-bdf168a5d288">
+    <Deployment runDeploymentRoot="Usuario_DESKTOP-AF03160_2022-01-26_10_17_30" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="a1d7ea96-b000-41ba-a06d-9a21a053f947" testId="ac55f08f-30ef-23f0-553c-8fb9260f6c63" testName="TestMethodSum" computerName="DESKTOP-AF03160" duration="00:00:05.3672656" startTime="2022-01-26T10:17:24.8470256-03:00" endTime="2022-01-26T10:17:30.2898892-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a1d7ea96-b000-41ba-a06d-9a21a053f947" />
+    <UnitTestResult executionId="5c5cbf17-322a-462f-a120-5d5924480983" testId="496c22e1-68c0-fb49-1166-535dcb3a0130" testName="AddNewAlarm" computerName="DESKTOP-AF03160" duration="00:00:10.8862767" startTime="2022-01-26T10:18:36.3106415-03:00" endTime="2022-01-26T10:18:47.1970316-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5c5cbf17-322a-462f-a120-5d5924480983">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MSTestOverview.Tests.TestAlarm.AddNewAlarm threw exception: &#xD;
+OpenQA.Selenium.WebDriverException: An element could not be located on the page using the given search parameters.&#xD;
+TestCleanup method MSTestOverview.Tests.TestAlarm.EndTest threw exception. System.NullReferenceException: System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto..</Message>
+          <StackTrace>    em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1.FindElementByXPath(String xpath)&#xD;
+   em MSTestOverview.Pages.PageObject.ClickInElementOrElementsByXPath(String[] elements) na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\PageObject.cs:linha 45&#xD;
+   em MSTestOverview.Pages.Alarm.AlarmPage.ClickAddNewAlarm() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\Alarm\AlarmPage.cs:linha 147&#xD;
+   em MSTestOverview.Tests.TestAlarm.AddNewAlarm() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 98&#xD;
+&#xD;
+TestCleanup Stack Trace&#xD;
+   em MSTestOverview.Tests.TestAlarm.EndTest() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 35&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="042bb4d7-d7d9-43c0-a48a-fb37bba71e71" testId="f5310fc3-286f-6cb0-991d-72e0e015032f" testName="ExtentTestCasePass" computerName="DESKTOP-AF03160" duration="00:00:05.8892044" startTime="2022-01-26T10:19:09.9905298-03:00" endTime="2022-01-26T10:19:15.8798823-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="042bb4d7-d7d9-43c0-a48a-fb37bba71e71">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MSTestOverview.Tests.TestAlarm.ExtentTestCasePass threw exception: &#xD;
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.</Message>
+          <StackTrace>    em MSTestOverview.ScreeShot.Report.ReportLogger(String testcasename) na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\ScreeShot\Report.cs:linha 37&#xD;
+   em MSTestOverview.Tests.TestAlarm.ExtentTestCasePass() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 155&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0d64e4ee-6d7d-4a5f-b3b9-eadb0a5a1bc1" testId="281ef8cf-432f-85f0-e58d-9a18385a6639" testName="EditingSecondItemTimer" computerName="DESKTOP-AF03160" duration="00:00:13.5722763" startTime="2022-01-26T10:18:13.3318758-03:00" endTime="2022-01-26T10:18:26.9049258-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0d64e4ee-6d7d-4a5f-b3b9-eadb0a5a1bc1">
+      <Output>
+        <ErrorInfo>
+          <Message>TestCleanup method MSTestOverview.Tests.TestAlarm.EndTest threw exception. System.NullReferenceException: System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto..</Message>
+          <StackTrace>   em MSTestOverview.Tests.TestAlarm.EndTest() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 35&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="772c415f-8ce4-4cb0-977c-3be7b07d0717" testId="b13bc7da-a874-062a-23c2-aeb82e2032bb" testName="AddNewTimer" computerName="DESKTOP-AF03160" duration="00:00:37.9809353" startTime="2022-01-26T10:17:35.3495911-03:00" endTime="2022-01-26T10:18:13.3318758-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="772c415f-8ce4-4cb0-977c-3be7b07d0717" resultType="DataDrivenTest">
+      <InnerResults>
+        <UnitTestResult executionId="f1b35c94-bb92-4598-a3b4-876c66cc9786" parentExecutionId="772c415f-8ce4-4cb0-977c-3be7b07d0717" testId="b13bc7da-a874-062a-23c2-aeb82e2032bb" testName="AddNewTimer (04,031,028)" computerName="DESKTOP-AF03160" duration="00:00:10.3365424" startTime="2022-01-26T10:17:35.3495911-03:00" endTime="2022-01-26T10:18:13.3318758-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f1b35c94-bb92-4598-a3b4-876c66cc9786" dataRowInfo="1" resultType="DataDrivenDataRow">
+          <Output>
+            <ErrorInfo>
+              <Message>TestCleanup method MSTestOverview.Tests.TestAlarm.EndTest threw exception. System.NullReferenceException: System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto..</Message>
+              <StackTrace>   em MSTestOverview.Tests.TestAlarm.EndTest() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 35&#xD;
+</StackTrace>
+            </ErrorInfo>
+          </Output>
+        </UnitTestResult>
+        <UnitTestResult executionId="43499c6c-9e9e-4437-9f0a-c00692b1bfc1" parentExecutionId="772c415f-8ce4-4cb0-977c-3be7b07d0717" testId="b13bc7da-a874-062a-23c2-aeb82e2032bb" testName="AddNewTimer (08,010,029)" computerName="DESKTOP-AF03160" duration="00:00:13.5518053" startTime="2022-01-26T10:17:35.3495911-03:00" endTime="2022-01-26T10:18:13.3318758-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="43499c6c-9e9e-4437-9f0a-c00692b1bfc1" dataRowInfo="2" resultType="DataDrivenDataRow">
+          <Output>
+            <ErrorInfo>
+              <Message>TestCleanup method MSTestOverview.Tests.TestAlarm.EndTest threw exception. System.NullReferenceException: System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto..</Message>
+              <StackTrace>   em MSTestOverview.Tests.TestAlarm.EndTest() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 35&#xD;
+</StackTrace>
+            </ErrorInfo>
+          </Output>
+        </UnitTestResult>
+        <UnitTestResult executionId="f12acafa-9ede-4550-af13-5f22fd005b35" parentExecutionId="772c415f-8ce4-4cb0-977c-3be7b07d0717" testId="b13bc7da-a874-062a-23c2-aeb82e2032bb" testName="AddNewTimer (14,033,015)" computerName="DESKTOP-AF03160" duration="00:00:14.0821726" startTime="2022-01-26T10:17:35.3495911-03:00" endTime="2022-01-26T10:18:13.3318758-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f12acafa-9ede-4550-af13-5f22fd005b35" dataRowInfo="3" resultType="DataDrivenDataRow">
+          <Output>
+            <ErrorInfo>
+              <Message>TestCleanup method MSTestOverview.Tests.TestAlarm.EndTest threw exception. System.NullReferenceException: System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto..</Message>
+              <StackTrace>   em MSTestOverview.Tests.TestAlarm.EndTest() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 35&#xD;
+</StackTrace>
+            </ErrorInfo>
+          </Output>
+        </UnitTestResult>
+      </InnerResults>
+    </UnitTestResult>
+    <UnitTestResult executionId="ad1547d5-3ea1-4e43-91e8-13ac82ede899" testId="dd4ea687-e746-4c8a-e2eb-cd7dac8db407" testName="AddWorldClock" computerName="DESKTOP-AF03160" duration="00:00:13.6782566" startTime="2022-01-26T10:18:47.1970316-03:00" endTime="2022-01-26T10:19:00.8754358-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ad1547d5-3ea1-4e43-91e8-13ac82ede899">
+      <Output>
+        <ErrorInfo>
+          <Message>TestCleanup method MSTestOverview.Tests.TestAlarm.EndTest threw exception. System.NullReferenceException: System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto..</Message>
+          <StackTrace>   em MSTestOverview.Tests.TestAlarm.EndTest() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 35&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f7654e16-ff08-474e-802f-c4c4b0ce5be0" testId="4b194512-f91f-2131-ada1-5e9580aa5510" testName="DeleteWorldClock" computerName="DESKTOP-AF03160" duration="00:00:09.1138469" startTime="2022-01-26T10:19:00.8754358-03:00" endTime="2022-01-26T10:19:09.9900336-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7654e16-ff08-474e-802f-c4c4b0ce5be0">
+      <Output>
+        <ErrorInfo>
+          <Message>TestCleanup method MSTestOverview.Tests.TestAlarm.EndTest threw exception. System.NullReferenceException: System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto..</Message>
+          <StackTrace>   em MSTestOverview.Tests.TestAlarm.EndTest() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 35&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="579b20bb-681c-4bd9-8a3a-9beae9125b71" testId="a989d22b-9cb7-6df5-765a-6db1bd2bae01" testName="ExcluingSecondItemTimer" computerName="DESKTOP-AF03160" duration="00:00:09.4054294" startTime="2022-01-26T10:18:26.9049258-03:00" endTime="2022-01-26T10:18:36.3106415-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="579b20bb-681c-4bd9-8a3a-9beae9125b71">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MSTestOverview.Tests.TestAlarm.ExcluingSecondItemTimer threw exception: &#xD;
+OpenQA.Selenium.WebDriverException: An element could not be located on the page using the given search parameters.&#xD;
+TestCleanup method MSTestOverview.Tests.TestAlarm.EndTest threw exception. System.NullReferenceException: System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto..</Message>
+          <StackTrace>    em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1.FindElementByXPath(String xpath)&#xD;
+   em MSTestOverview.Pages.PageObject.ClickInElementOrElementsByXPath(String[] elements) na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\PageObject.cs:linha 45&#xD;
+   em MSTestOverview.Pages.Alarm.AlarmPage.ClickExcludeSecondItemTimer() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\Alarm\AlarmPage.cs:linha 79&#xD;
+   em MSTestOverview.Tests.TestAlarm.ExcluingSecondItemTimer() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 87&#xD;
+&#xD;
+TestCleanup Stack Trace&#xD;
+   em MSTestOverview.Tests.TestAlarm.EndTest() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 35&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="11653a55-2f36-4ef1-b7fc-183af501b54b" testId="48d7f969-752f-b89c-2124-afce13e498d9" testName="TestMethodMinus" computerName="DESKTOP-AF03160" duration="00:00:05.0385429" startTime="2022-01-26T10:17:30.3098560-03:00" endTime="2022-01-26T10:17:35.3485873-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="11653a55-2f36-4ef1-b7fc-183af501b54b" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="TestMethodSum" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="ac55f08f-30ef-23f0-553c-8fb9260f6c63">
+      <Execution id="a1d7ea96-b000-41ba-a06d-9a21a053f947" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.TestCalculator" name="TestMethodSum" />
+    </UnitTest>
+    <UnitTest name="TestMethodMinus" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="48d7f969-752f-b89c-2124-afce13e498d9">
+      <Execution id="11653a55-2f36-4ef1-b7fc-183af501b54b" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.TestCalculator" name="TestMethodMinus" />
+    </UnitTest>
+    <UnitTest name="DeleteWorldClock" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="4b194512-f91f-2131-ada1-5e9580aa5510">
+      <Execution id="f7654e16-ff08-474e-802f-c4c4b0ce5be0" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.Tests.TestAlarm" name="DeleteWorldClock" />
+    </UnitTest>
+    <UnitTest name="AddWorldClock" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="dd4ea687-e746-4c8a-e2eb-cd7dac8db407">
+      <Execution id="ad1547d5-3ea1-4e43-91e8-13ac82ede899" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.Tests.TestAlarm" name="AddWorldClock" />
+    </UnitTest>
+    <UnitTest name="AddNewTimer" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="b13bc7da-a874-062a-23c2-aeb82e2032bb">
+      <Execution id="772c415f-8ce4-4cb0-977c-3be7b07d0717" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.Tests.TestAlarm" name="AddNewTimer" />
+    </UnitTest>
+    <UnitTest name="ExtentTestCasePass" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="f5310fc3-286f-6cb0-991d-72e0e015032f">
+      <TestCategory>
+        <TestCategoryItem TestCategory="ExtentTest" />
+      </TestCategory>
+      <Execution id="042bb4d7-d7d9-43c0-a48a-fb37bba71e71" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.Tests.TestAlarm" name="ExtentTestCasePass" />
+    </UnitTest>
+    <UnitTest name="AddNewAlarm" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="496c22e1-68c0-fb49-1166-535dcb3a0130">
+      <Execution id="5c5cbf17-322a-462f-a120-5d5924480983" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.Tests.TestAlarm" name="AddNewAlarm" />
+    </UnitTest>
+    <UnitTest name="ExcluingSecondItemTimer" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="a989d22b-9cb7-6df5-765a-6db1bd2bae01">
+      <Execution id="579b20bb-681c-4bd9-8a3a-9beae9125b71" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.Tests.TestAlarm" name="ExcluingSecondItemTimer" />
+    </UnitTest>
+    <UnitTest name="EditingSecondItemTimer" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="281ef8cf-432f-85f0-e58d-9a18385a6639">
+      <Execution id="0d64e4ee-6d7d-4a5f-b3b9-eadb0a5a1bc1" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.Tests.TestAlarm" name="EditingSecondItemTimer" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="ac55f08f-30ef-23f0-553c-8fb9260f6c63" executionId="a1d7ea96-b000-41ba-a06d-9a21a053f947" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="496c22e1-68c0-fb49-1166-535dcb3a0130" executionId="5c5cbf17-322a-462f-a120-5d5924480983" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f5310fc3-286f-6cb0-991d-72e0e015032f" executionId="042bb4d7-d7d9-43c0-a48a-fb37bba71e71" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="281ef8cf-432f-85f0-e58d-9a18385a6639" executionId="0d64e4ee-6d7d-4a5f-b3b9-eadb0a5a1bc1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b13bc7da-a874-062a-23c2-aeb82e2032bb" executionId="772c415f-8ce4-4cb0-977c-3be7b07d0717" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dd4ea687-e746-4c8a-e2eb-cd7dac8db407" executionId="ad1547d5-3ea1-4e43-91e8-13ac82ede899" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4b194512-f91f-2131-ada1-5e9580aa5510" executionId="f7654e16-ff08-474e-802f-c4c4b0ce5be0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a989d22b-9cb7-6df5-765a-6db1bd2bae01" executionId="579b20bb-681c-4bd9-8a3a-9beae9125b71" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="48d7f969-752f-b89c-2124-afce13e498d9" executionId="11653a55-2f36-4ef1-b7fc-183af501b54b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Resultados que não estão em uma lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos os resultados carregados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="12" executed="12" passed="2" failed="10" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>

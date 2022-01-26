@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace MSTestOverview.Pages.Alarm
@@ -81,8 +82,11 @@ namespace MSTestOverview.Pages.Alarm
 
         public void ClickEditingTimerButtom()
         {
-            this.WaitUntil(this.Element, 5, "EditTimersButton");
-            this.ClickInElementOrElementsById("EditTimersButton");
+
+            //this.WaitUntil(this.Element, 5, "EditTimersButton");
+            //this.ClickInElementOrElementsById("EditTimersButton");
+            this.WaitUntilXPath(this.Element, 4, "/Window/Window[2]/Pane/Button[1]");
+            this.ClickInElementOrElementsByXPath("/Window/Window[2]/Pane/Button[1]");
         }
 
         public void ClickSecondItemTimer()
@@ -143,8 +147,9 @@ namespace MSTestOverview.Pages.Alarm
         
         public void ClickAddNewAlarm()
         {
-            this.WaitUntilXPath(this.Element, 4, "/Window/Window[2]/Pane/Button[2]");
-            this.ClickInElementOrElementsByXPath("/Window/Window[2]/Pane/Button[2]");
+            // XPath = /Window/Window[2]/Pane/Button[2]
+            this.WaitUntilName(this.Element, 4, "Adicionar um alarme");
+            this.ClickInElementOrElementsByName("Adicionar um alarme");
         }
         public void ClickWorldClock()
         {
