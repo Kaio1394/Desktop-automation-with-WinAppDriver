@@ -30,10 +30,10 @@ namespace MSTestOverview.ScreeShot
                 new AventStack.ExtentReports.Reporter.ExtentHtmlReporter(dirpath);
 
             htmlReporter.Config.Theme = AventStack.ExtentReports.Reporter.Configuration.Theme.Dark;
-
             extent.AttachReporter(htmlReporter);
-            extent.AddSystemInfo("Host name", System.Net.Dns.GetHostName());
-            extent.AddSystemInfo("User name", System.Security.Principal.WindowsIdentity.GetCurrent().Name);
+            extent.AddSystemInfo("Host name", /*System.Net.Dns.GetHostName()*/"Kaio");
+            extent.AddSystemInfo("User name", /*System.Security.Principal.WindowsIdentity.GetCurrent().Name*/"p-santiago.kaio");
+            extent.AddSystemInfo("Date", new DateTime().ToString());
         }
     }
 }
