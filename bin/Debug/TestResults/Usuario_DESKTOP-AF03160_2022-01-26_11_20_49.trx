@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="d3585ff2-984a-4115-bd96-21e70258117a" name="Usuario@DESKTOP-AF03160 2022-01-26 11:20:49" runUser="DESKTOP-AF03160\Usuario" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2022-01-26T11:20:49.6729669-03:00" queuing="2022-01-26T11:20:49.6729669-03:00" start="2022-01-26T11:20:46.4271624-03:00" finish="2022-01-26T11:21:08.0450426-03:00" />
+  <TestSettings name="default" id="2af3151d-dfa7-4125-a5d2-215aaf1b5307">
+    <Deployment runDeploymentRoot="Usuario_DESKTOP-AF03160_2022-01-26_11_20_49" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="65bc56d9-e5f3-475f-85e1-22c2cf1bdd5a" testId="496c22e1-68c0-fb49-1166-535dcb3a0130" testName="AddNewAlarm" computerName="DESKTOP-AF03160" duration="00:00:02.0234183" startTime="2022-01-26T11:21:01.7069933-03:00" endTime="2022-01-26T11:21:03.7317490-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="65bc56d9-e5f3-475f-85e1-22c2cf1bdd5a">
+      <Output>
+        <ErrorInfo>
+          <Message>Initialization method MSTestOverview.Tests.TestAlarm.Start threw exception. OpenQA.Selenium.WebDriverException: Unexpected error. System.Net.WebException: Impossível conectar-se ao servidor remoto ---&gt; System.Net.Sockets.SocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:4723&#xD;
+   em System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)&#xD;
+   em System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket&amp; socket, IPAddress&amp; address, ConnectSocketState state, IAsyncResult asyncResult, Exception&amp; exception)&#xD;
+   --- Fim do rastreamento de pilha de exceções internas ---&#xD;
+   em OpenQA.Selenium.Appium.Service.AppiumCommandExecutor.Execute(Command commandToExecute)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters).&#xD;
+TestCleanup method MSTestOverview.Tests.TestAlarm.EndTest threw exception. System.NullReferenceException: System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto..</Message>
+          <StackTrace>    em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1..ctor(Uri remoteAddress, ICapabilities appiumOptions)&#xD;
+   em OpenQA.Selenium.Appium.Windows.WindowsDriver`1..ctor(Uri remoteAddress, AppiumOptions AppiumOptions)&#xD;
+   em MSTestOverview.Pages.PageObject..ctor(WindowsDriver`1 element, String propertyElement, String uriDriver) na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\PageObject.cs:linha 24&#xD;
+   em MSTestOverview.Pages.Alarm.AlarmPage..ctor() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\Alarm\AlarmPage.cs:linha 15&#xD;
+   em MSTestOverview.Tests.TestAlarm.Start() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 28&#xD;
+&#xD;
+TestCleanup Stack Trace&#xD;
+   em MSTestOverview.Tests.TestAlarm.EndTest() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 33&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a3189900-827b-4858-8847-7d4dbbb7e212" testId="4b194512-f91f-2131-ada1-5e9580aa5510" testName="DeleteWorldClock" computerName="DESKTOP-AF03160" duration="00:00:02.0299093" startTime="2022-01-26T11:21:05.7814856-03:00" endTime="2022-01-26T11:21:07.8126675-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a3189900-827b-4858-8847-7d4dbbb7e212">
+      <Output>
+        <ErrorInfo>
+          <Message>Initialization method MSTestOverview.Tests.TestAlarm.Start threw exception. OpenQA.Selenium.WebDriverException: Unexpected error. System.Net.WebException: Impossível conectar-se ao servidor remoto ---&gt; System.Net.Sockets.SocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:4723&#xD;
+   em System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)&#xD;
+   em System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket&amp; socket, IPAddress&amp; address, ConnectSocketState state, IAsyncResult asyncResult, Exception&amp; exception)&#xD;
+   --- Fim do rastreamento de pilha de exceções internas ---&#xD;
+   em OpenQA.Selenium.Appium.Service.AppiumCommandExecutor.Execute(Command commandToExecute)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters).&#xD;
+TestCleanup method MSTestOverview.Tests.TestAlarm.EndTest threw exception. System.NullReferenceException: System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto..</Message>
+          <StackTrace>    em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1..ctor(Uri remoteAddress, ICapabilities appiumOptions)&#xD;
+   em OpenQA.Selenium.Appium.Windows.WindowsDriver`1..ctor(Uri remoteAddress, AppiumOptions AppiumOptions)&#xD;
+   em MSTestOverview.Pages.PageObject..ctor(WindowsDriver`1 element, String propertyElement, String uriDriver) na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\PageObject.cs:linha 24&#xD;
+   em MSTestOverview.Pages.Alarm.AlarmPage..ctor() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\Alarm\AlarmPage.cs:linha 15&#xD;
+   em MSTestOverview.Tests.TestAlarm.Start() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 28&#xD;
+&#xD;
+TestCleanup Stack Trace&#xD;
+   em MSTestOverview.Tests.TestAlarm.EndTest() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 33&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ddae2c97-6c1e-4262-9f5a-455d94c57cc7" testId="a989d22b-9cb7-6df5-765a-6db1bd2bae01" testName="ExcluingSecondItemTimer" computerName="DESKTOP-AF03160" duration="00:00:02.0333317" startTime="2022-01-26T11:20:59.6732461-03:00" endTime="2022-01-26T11:21:01.7069933-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ddae2c97-6c1e-4262-9f5a-455d94c57cc7">
+      <Output>
+        <ErrorInfo>
+          <Message>Initialization method MSTestOverview.Tests.TestAlarm.Start threw exception. OpenQA.Selenium.WebDriverException: Unexpected error. System.Net.WebException: Impossível conectar-se ao servidor remoto ---&gt; System.Net.Sockets.SocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:4723&#xD;
+   em System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)&#xD;
+   em System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket&amp; socket, IPAddress&amp; address, ConnectSocketState state, IAsyncResult asyncResult, Exception&amp; exception)&#xD;
+   --- Fim do rastreamento de pilha de exceções internas ---&#xD;
+   em OpenQA.Selenium.Appium.Service.AppiumCommandExecutor.Execute(Command commandToExecute)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters).&#xD;
+TestCleanup method MSTestOverview.Tests.TestAlarm.EndTest threw exception. System.NullReferenceException: System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto..</Message>
+          <StackTrace>    em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1..ctor(Uri remoteAddress, ICapabilities appiumOptions)&#xD;
+   em OpenQA.Selenium.Appium.Windows.WindowsDriver`1..ctor(Uri remoteAddress, AppiumOptions AppiumOptions)&#xD;
+   em MSTestOverview.Pages.PageObject..ctor(WindowsDriver`1 element, String propertyElement, String uriDriver) na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\PageObject.cs:linha 24&#xD;
+   em MSTestOverview.Pages.Alarm.AlarmPage..ctor() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\Alarm\AlarmPage.cs:linha 15&#xD;
+   em MSTestOverview.Tests.TestAlarm.Start() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 28&#xD;
+&#xD;
+TestCleanup Stack Trace&#xD;
+   em MSTestOverview.Tests.TestAlarm.EndTest() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 33&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c250ad07-50d7-45c8-ace2-7e1224984094" testId="dd4ea687-e746-4c8a-e2eb-cd7dac8db407" testName="AddWorldClock" computerName="DESKTOP-AF03160" duration="00:00:02.0477965" startTime="2022-01-26T11:21:03.7317490-03:00" endTime="2022-01-26T11:21:05.7814856-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c250ad07-50d7-45c8-ace2-7e1224984094">
+      <Output>
+        <ErrorInfo>
+          <Message>Initialization method MSTestOverview.Tests.TestAlarm.Start threw exception. OpenQA.Selenium.WebDriverException: Unexpected error. System.Net.WebException: Impossível conectar-se ao servidor remoto ---&gt; System.Net.Sockets.SocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:4723&#xD;
+   em System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)&#xD;
+   em System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket&amp; socket, IPAddress&amp; address, ConnectSocketState state, IAsyncResult asyncResult, Exception&amp; exception)&#xD;
+   --- Fim do rastreamento de pilha de exceções internas ---&#xD;
+   em OpenQA.Selenium.Appium.Service.AppiumCommandExecutor.Execute(Command commandToExecute)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters).&#xD;
+TestCleanup method MSTestOverview.Tests.TestAlarm.EndTest threw exception. System.NullReferenceException: System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto..</Message>
+          <StackTrace>    em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1..ctor(Uri remoteAddress, ICapabilities appiumOptions)&#xD;
+   em OpenQA.Selenium.Appium.Windows.WindowsDriver`1..ctor(Uri remoteAddress, AppiumOptions AppiumOptions)&#xD;
+   em MSTestOverview.Pages.PageObject..ctor(WindowsDriver`1 element, String propertyElement, String uriDriver) na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\PageObject.cs:linha 24&#xD;
+   em MSTestOverview.Pages.Alarm.AlarmPage..ctor() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\Alarm\AlarmPage.cs:linha 15&#xD;
+   em MSTestOverview.Tests.TestAlarm.Start() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 28&#xD;
+&#xD;
+TestCleanup Stack Trace&#xD;
+   em MSTestOverview.Tests.TestAlarm.EndTest() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 33&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bfbbacca-17ad-4acb-9e08-136da08224c0" testId="48d7f969-752f-b89c-2124-afce13e498d9" testName="TestMethodMinus" computerName="DESKTOP-AF03160" duration="00:00:02.0386779" startTime="2022-01-26T11:20:49.4854512-03:00" endTime="2022-01-26T11:20:51.5239421-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bfbbacca-17ad-4acb-9e08-136da08224c0">
+      <Output>
+        <ErrorInfo>
+          <Message>Initialization method MSTestOverview.TestCalculator.Start threw exception. OpenQA.Selenium.WebDriverException: Unexpected error. System.Net.WebException: Impossível conectar-se ao servidor remoto ---&gt; System.Net.Sockets.SocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:4723&#xD;
+   em System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)&#xD;
+   em System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket&amp; socket, IPAddress&amp; address, ConnectSocketState state, IAsyncResult asyncResult, Exception&amp; exception)&#xD;
+   --- Fim do rastreamento de pilha de exceções internas ---&#xD;
+   em OpenQA.Selenium.Appium.Service.AppiumCommandExecutor.Execute(Command commandToExecute)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters).&#xD;
+TestCleanup method MSTestOverview.TestCalculator.EndTest threw exception. System.NullReferenceException: System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto..</Message>
+          <StackTrace>    em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1..ctor(Uri remoteAddress, ICapabilities appiumOptions)&#xD;
+   em OpenQA.Selenium.Appium.Windows.WindowsDriver`1..ctor(Uri remoteAddress, AppiumOptions AppiumOptions)&#xD;
+   em MSTestOverview.Pages.PageObject..ctor(WindowsDriver`1 element, String propertyElement, String uriDriver) na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\PageObject.cs:linha 24&#xD;
+   em MSTestOverview.Pages.Calculator.CalculatorPage..ctor() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\Calculator\CalculatorPage.cs:linha 14&#xD;
+   em MSTestOverview.TestCalculator.Start() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestCalculator.cs:linha 20&#xD;
+&#xD;
+TestCleanup Stack Trace&#xD;
+   em MSTestOverview.TestCalculator.EndTest() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestCalculator.cs:linha 26&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7ebd4329-e9d5-44d1-88b0-e6bc3ab5a8c0" testId="281ef8cf-432f-85f0-e58d-9a18385a6639" testName="EditingSecondItemTimer" computerName="DESKTOP-AF03160" duration="00:00:02.0497505" startTime="2022-01-26T11:20:57.6223771-03:00" endTime="2022-01-26T11:20:59.6722531-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7ebd4329-e9d5-44d1-88b0-e6bc3ab5a8c0">
+      <Output>
+        <ErrorInfo>
+          <Message>Initialization method MSTestOverview.Tests.TestAlarm.Start threw exception. OpenQA.Selenium.WebDriverException: Unexpected error. System.Net.WebException: Impossível conectar-se ao servidor remoto ---&gt; System.Net.Sockets.SocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:4723&#xD;
+   em System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)&#xD;
+   em System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket&amp; socket, IPAddress&amp; address, ConnectSocketState state, IAsyncResult asyncResult, Exception&amp; exception)&#xD;
+   --- Fim do rastreamento de pilha de exceções internas ---&#xD;
+   em OpenQA.Selenium.Appium.Service.AppiumCommandExecutor.Execute(Command commandToExecute)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters).&#xD;
+TestCleanup method MSTestOverview.Tests.TestAlarm.EndTest threw exception. System.NullReferenceException: System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto..</Message>
+          <StackTrace>    em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1..ctor(Uri remoteAddress, ICapabilities appiumOptions)&#xD;
+   em OpenQA.Selenium.Appium.Windows.WindowsDriver`1..ctor(Uri remoteAddress, AppiumOptions AppiumOptions)&#xD;
+   em MSTestOverview.Pages.PageObject..ctor(WindowsDriver`1 element, String propertyElement, String uriDriver) na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\PageObject.cs:linha 24&#xD;
+   em MSTestOverview.Pages.Alarm.AlarmPage..ctor() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\Alarm\AlarmPage.cs:linha 15&#xD;
+   em MSTestOverview.Tests.TestAlarm.Start() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 28&#xD;
+&#xD;
+TestCleanup Stack Trace&#xD;
+   em MSTestOverview.Tests.TestAlarm.EndTest() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 33&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bbe8e8d4-b3a3-440e-bb56-e703cbf34cd2" testId="ac55f08f-30ef-23f0-553c-8fb9260f6c63" testName="TestMethodSum" computerName="DESKTOP-AF03160" duration="00:00:02.3575266" startTime="2022-01-26T11:20:47.0101221-03:00" endTime="2022-01-26T11:20:49.4684539-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bbe8e8d4-b3a3-440e-bb56-e703cbf34cd2">
+      <Output>
+        <ErrorInfo>
+          <Message>Initialization method MSTestOverview.TestCalculator.Start threw exception. OpenQA.Selenium.WebDriverException: Unexpected error. System.Net.WebException: Impossível conectar-se ao servidor remoto ---&gt; System.Net.Sockets.SocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:4723&#xD;
+   em System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)&#xD;
+   em System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket&amp; socket, IPAddress&amp; address, ConnectSocketState state, IAsyncResult asyncResult, Exception&amp; exception)&#xD;
+   --- Fim do rastreamento de pilha de exceções internas ---&#xD;
+   em OpenQA.Selenium.Appium.Service.AppiumCommandExecutor.Execute(Command commandToExecute)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters).&#xD;
+TestCleanup method MSTestOverview.TestCalculator.EndTest threw exception. System.NullReferenceException: System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto..</Message>
+          <StackTrace>    em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1..ctor(Uri remoteAddress, ICapabilities appiumOptions)&#xD;
+   em OpenQA.Selenium.Appium.Windows.WindowsDriver`1..ctor(Uri remoteAddress, AppiumOptions AppiumOptions)&#xD;
+   em MSTestOverview.Pages.PageObject..ctor(WindowsDriver`1 element, String propertyElement, String uriDriver) na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\PageObject.cs:linha 24&#xD;
+   em MSTestOverview.Pages.Calculator.CalculatorPage..ctor() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\Calculator\CalculatorPage.cs:linha 14&#xD;
+   em MSTestOverview.TestCalculator.Start() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestCalculator.cs:linha 20&#xD;
+&#xD;
+TestCleanup Stack Trace&#xD;
+   em MSTestOverview.TestCalculator.EndTest() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestCalculator.cs:linha 26&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c473303b-39d4-4481-a1f2-f57f2e4249be" testId="b13bc7da-a874-062a-23c2-aeb82e2032bb" testName="AddNewTimer" computerName="DESKTOP-AF03160" duration="00:00:06.0929126" startTime="2022-01-26T11:20:51.5251883-03:00" endTime="2022-01-26T11:20:57.6221208-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c473303b-39d4-4481-a1f2-f57f2e4249be" resultType="DataDrivenTest">
+      <InnerResults>
+        <UnitTestResult executionId="9aea91cd-e3eb-4828-ae3e-25e4abc84814" parentExecutionId="c473303b-39d4-4481-a1f2-f57f2e4249be" testId="b13bc7da-a874-062a-23c2-aeb82e2032bb" testName="AddNewTimer (04,031,028)" computerName="DESKTOP-AF03160" duration="00:00:02.0269385" startTime="2022-01-26T11:20:51.5251883-03:00" endTime="2022-01-26T11:20:57.6221208-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9aea91cd-e3eb-4828-ae3e-25e4abc84814" dataRowInfo="1" resultType="DataDrivenDataRow">
+          <Output>
+            <ErrorInfo>
+              <Message>Initialization method MSTestOverview.Tests.TestAlarm.Start threw exception. OpenQA.Selenium.WebDriverException: Unexpected error. System.Net.WebException: Impossível conectar-se ao servidor remoto ---&gt; System.Net.Sockets.SocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:4723&#xD;
+   em System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)&#xD;
+   em System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket&amp; socket, IPAddress&amp; address, ConnectSocketState state, IAsyncResult asyncResult, Exception&amp; exception)&#xD;
+   --- Fim do rastreamento de pilha de exceções internas ---&#xD;
+   em OpenQA.Selenium.Appium.Service.AppiumCommandExecutor.Execute(Command commandToExecute)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters).&#xD;
+TestCleanup method MSTestOverview.Tests.TestAlarm.EndTest threw exception. System.NullReferenceException: System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto..</Message>
+              <StackTrace>    em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1..ctor(Uri remoteAddress, ICapabilities appiumOptions)&#xD;
+   em OpenQA.Selenium.Appium.Windows.WindowsDriver`1..ctor(Uri remoteAddress, AppiumOptions AppiumOptions)&#xD;
+   em MSTestOverview.Pages.PageObject..ctor(WindowsDriver`1 element, String propertyElement, String uriDriver) na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\PageObject.cs:linha 24&#xD;
+   em MSTestOverview.Pages.Alarm.AlarmPage..ctor() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\Alarm\AlarmPage.cs:linha 15&#xD;
+   em MSTestOverview.Tests.TestAlarm.Start() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 28&#xD;
+&#xD;
+TestCleanup Stack Trace&#xD;
+   em MSTestOverview.Tests.TestAlarm.EndTest() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 33&#xD;
+</StackTrace>
+            </ErrorInfo>
+          </Output>
+        </UnitTestResult>
+        <UnitTestResult executionId="482b21bf-4198-4cf3-ad25-6f62a55f843f" parentExecutionId="c473303b-39d4-4481-a1f2-f57f2e4249be" testId="b13bc7da-a874-062a-23c2-aeb82e2032bb" testName="AddNewTimer (08,010,029)" computerName="DESKTOP-AF03160" duration="00:00:02.0229139" startTime="2022-01-26T11:20:51.5251883-03:00" endTime="2022-01-26T11:20:57.6221208-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="482b21bf-4198-4cf3-ad25-6f62a55f843f" dataRowInfo="2" resultType="DataDrivenDataRow">
+          <Output>
+            <ErrorInfo>
+              <Message>Initialization method MSTestOverview.Tests.TestAlarm.Start threw exception. OpenQA.Selenium.WebDriverException: Unexpected error. System.Net.WebException: Impossível conectar-se ao servidor remoto ---&gt; System.Net.Sockets.SocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:4723&#xD;
+   em System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)&#xD;
+   em System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket&amp; socket, IPAddress&amp; address, ConnectSocketState state, IAsyncResult asyncResult, Exception&amp; exception)&#xD;
+   --- Fim do rastreamento de pilha de exceções internas ---&#xD;
+   em OpenQA.Selenium.Appium.Service.AppiumCommandExecutor.Execute(Command commandToExecute)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters).&#xD;
+TestCleanup method MSTestOverview.Tests.TestAlarm.EndTest threw exception. System.NullReferenceException: System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto..</Message>
+              <StackTrace>    em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1..ctor(Uri remoteAddress, ICapabilities appiumOptions)&#xD;
+   em OpenQA.Selenium.Appium.Windows.WindowsDriver`1..ctor(Uri remoteAddress, AppiumOptions AppiumOptions)&#xD;
+   em MSTestOverview.Pages.PageObject..ctor(WindowsDriver`1 element, String propertyElement, String uriDriver) na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\PageObject.cs:linha 24&#xD;
+   em MSTestOverview.Pages.Alarm.AlarmPage..ctor() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\Alarm\AlarmPage.cs:linha 15&#xD;
+   em MSTestOverview.Tests.TestAlarm.Start() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 28&#xD;
+&#xD;
+TestCleanup Stack Trace&#xD;
+   em MSTestOverview.Tests.TestAlarm.EndTest() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 33&#xD;
+</StackTrace>
+            </ErrorInfo>
+          </Output>
+        </UnitTestResult>
+        <UnitTestResult executionId="b93686d4-7427-487f-be17-f6375db1c863" parentExecutionId="c473303b-39d4-4481-a1f2-f57f2e4249be" testId="b13bc7da-a874-062a-23c2-aeb82e2032bb" testName="AddNewTimer (14,033,015)" computerName="DESKTOP-AF03160" duration="00:00:02.0147687" startTime="2022-01-26T11:20:51.5251883-03:00" endTime="2022-01-26T11:20:57.6221208-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b93686d4-7427-487f-be17-f6375db1c863" dataRowInfo="3" resultType="DataDrivenDataRow">
+          <Output>
+            <ErrorInfo>
+              <Message>Initialization method MSTestOverview.Tests.TestAlarm.Start threw exception. OpenQA.Selenium.WebDriverException: Unexpected error. System.Net.WebException: Impossível conectar-se ao servidor remoto ---&gt; System.Net.Sockets.SocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:4723&#xD;
+   em System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)&#xD;
+   em System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket&amp; socket, IPAddress&amp; address, ConnectSocketState state, IAsyncResult asyncResult, Exception&amp; exception)&#xD;
+   --- Fim do rastreamento de pilha de exceções internas ---&#xD;
+   em OpenQA.Selenium.Appium.Service.AppiumCommandExecutor.Execute(Command commandToExecute)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters).&#xD;
+TestCleanup method MSTestOverview.Tests.TestAlarm.EndTest threw exception. System.NullReferenceException: System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto..</Message>
+              <StackTrace>    em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1..ctor(Uri remoteAddress, ICapabilities appiumOptions)&#xD;
+   em OpenQA.Selenium.Appium.Windows.WindowsDriver`1..ctor(Uri remoteAddress, AppiumOptions AppiumOptions)&#xD;
+   em MSTestOverview.Pages.PageObject..ctor(WindowsDriver`1 element, String propertyElement, String uriDriver) na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\PageObject.cs:linha 24&#xD;
+   em MSTestOverview.Pages.Alarm.AlarmPage..ctor() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\Alarm\AlarmPage.cs:linha 15&#xD;
+   em MSTestOverview.Tests.TestAlarm.Start() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 28&#xD;
+&#xD;
+TestCleanup Stack Trace&#xD;
+   em MSTestOverview.Tests.TestAlarm.EndTest() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 33&#xD;
+</StackTrace>
+            </ErrorInfo>
+          </Output>
+        </UnitTestResult>
+      </InnerResults>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="TestMethodSum" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="ac55f08f-30ef-23f0-553c-8fb9260f6c63">
+      <Execution id="bbe8e8d4-b3a3-440e-bb56-e703cbf34cd2" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.TestCalculator" name="TestMethodSum" />
+    </UnitTest>
+    <UnitTest name="TestMethodMinus" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="48d7f969-752f-b89c-2124-afce13e498d9">
+      <Execution id="bfbbacca-17ad-4acb-9e08-136da08224c0" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.TestCalculator" name="TestMethodMinus" />
+    </UnitTest>
+    <UnitTest name="DeleteWorldClock" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="4b194512-f91f-2131-ada1-5e9580aa5510">
+      <Execution id="a3189900-827b-4858-8847-7d4dbbb7e212" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.Tests.TestAlarm" name="DeleteWorldClock" />
+    </UnitTest>
+    <UnitTest name="AddWorldClock" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="dd4ea687-e746-4c8a-e2eb-cd7dac8db407">
+      <Execution id="c250ad07-50d7-45c8-ace2-7e1224984094" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.Tests.TestAlarm" name="AddWorldClock" />
+    </UnitTest>
+    <UnitTest name="AddNewTimer" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="b13bc7da-a874-062a-23c2-aeb82e2032bb">
+      <Execution id="c473303b-39d4-4481-a1f2-f57f2e4249be" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.Tests.TestAlarm" name="AddNewTimer" />
+    </UnitTest>
+    <UnitTest name="AddNewAlarm" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="496c22e1-68c0-fb49-1166-535dcb3a0130">
+      <Execution id="65bc56d9-e5f3-475f-85e1-22c2cf1bdd5a" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.Tests.TestAlarm" name="AddNewAlarm" />
+    </UnitTest>
+    <UnitTest name="ExcluingSecondItemTimer" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="a989d22b-9cb7-6df5-765a-6db1bd2bae01">
+      <Execution id="ddae2c97-6c1e-4262-9f5a-455d94c57cc7" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.Tests.TestAlarm" name="ExcluingSecondItemTimer" />
+    </UnitTest>
+    <UnitTest name="EditingSecondItemTimer" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="281ef8cf-432f-85f0-e58d-9a18385a6639">
+      <Execution id="7ebd4329-e9d5-44d1-88b0-e6bc3ab5a8c0" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.Tests.TestAlarm" name="EditingSecondItemTimer" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="496c22e1-68c0-fb49-1166-535dcb3a0130" executionId="65bc56d9-e5f3-475f-85e1-22c2cf1bdd5a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4b194512-f91f-2131-ada1-5e9580aa5510" executionId="a3189900-827b-4858-8847-7d4dbbb7e212" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a989d22b-9cb7-6df5-765a-6db1bd2bae01" executionId="ddae2c97-6c1e-4262-9f5a-455d94c57cc7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dd4ea687-e746-4c8a-e2eb-cd7dac8db407" executionId="c250ad07-50d7-45c8-ace2-7e1224984094" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="48d7f969-752f-b89c-2124-afce13e498d9" executionId="bfbbacca-17ad-4acb-9e08-136da08224c0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="281ef8cf-432f-85f0-e58d-9a18385a6639" executionId="7ebd4329-e9d5-44d1-88b0-e6bc3ab5a8c0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ac55f08f-30ef-23f0-553c-8fb9260f6c63" executionId="bbe8e8d4-b3a3-440e-bb56-e703cbf34cd2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b13bc7da-a874-062a-23c2-aeb82e2032bb" executionId="c473303b-39d4-4481-a1f2-f57f2e4249be" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Resultados que não estão em uma lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos os resultados carregados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="11" executed="11" passed="0" failed="11" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>

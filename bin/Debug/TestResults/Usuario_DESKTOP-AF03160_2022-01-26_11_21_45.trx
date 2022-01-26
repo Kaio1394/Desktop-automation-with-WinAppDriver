@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="ceeba919-415c-45d5-8574-5d3f1476e935" name="Usuario@DESKTOP-AF03160 2022-01-26 11:21:45" runUser="DESKTOP-AF03160\Usuario" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2022-01-26T11:21:45.6035325-03:00" queuing="2022-01-26T11:21:45.6035325-03:00" start="2022-01-26T11:21:38.5519502-03:00" finish="2022-01-26T11:23:08.9433510-03:00" />
+  <TestSettings name="default" id="63562be4-7ddf-4890-bb58-cc73253b788a">
+    <Deployment runDeploymentRoot="Usuario_DESKTOP-AF03160_2022-01-26_11_21_45" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="85cc9dc2-77ae-4904-9eb8-d0d715917901" testId="48d7f969-752f-b89c-2124-afce13e498d9" testName="TestMethodMinus" computerName="DESKTOP-AF03160" duration="00:00:05.8442650" startTime="2022-01-26T11:21:45.5865301-03:00" endTime="2022-01-26T11:21:51.4329637-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="85cc9dc2-77ae-4904-9eb8-d0d715917901" />
+    <UnitTestResult executionId="a3330fbb-5097-46b7-beae-d82430ba8d18" testId="ac55f08f-30ef-23f0-553c-8fb9260f6c63" testName="TestMethodSum" computerName="DESKTOP-AF03160" duration="00:00:06.2495792" startTime="2022-01-26T11:21:39.2031752-03:00" endTime="2022-01-26T11:21:45.5395311-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a3330fbb-5097-46b7-beae-d82430ba8d18" />
+    <UnitTestResult executionId="709b8eda-f751-4cc2-9220-63719b553eb5" testId="dd4ea687-e746-4c8a-e2eb-cd7dac8db407" testName="AddWorldClock" computerName="DESKTOP-AF03160" duration="00:00:11.7040613" startTime="2022-01-26T11:22:50.1954966-03:00" endTime="2022-01-26T11:23:01.9007145-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="709b8eda-f751-4cc2-9220-63719b553eb5" />
+    <UnitTestResult executionId="de91140a-a4fd-497e-b71d-66701a47152f" testId="b13bc7da-a874-062a-23c2-aeb82e2032bb" testName="AddNewTimer" computerName="DESKTOP-AF03160" duration="00:00:29.2348451" startTime="2022-01-26T11:21:51.4339589-03:00" endTime="2022-01-26T11:22:20.6712669-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="de91140a-a4fd-497e-b71d-66701a47152f" resultType="DataDrivenTest">
+      <InnerResults>
+        <UnitTestResult executionId="55ec6be2-9329-46c3-87f4-f7fb930f4f25" parentExecutionId="de91140a-a4fd-497e-b71d-66701a47152f" testId="b13bc7da-a874-062a-23c2-aeb82e2032bb" testName="AddNewTimer (04,031,028)" computerName="DESKTOP-AF03160" duration="00:00:09.4454487" startTime="2022-01-26T11:21:51.4339589-03:00" endTime="2022-01-26T11:22:20.6712669-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="55ec6be2-9329-46c3-87f4-f7fb930f4f25" dataRowInfo="1" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="9e86b418-c8b6-4d36-87fa-170f05fa7a68" parentExecutionId="de91140a-a4fd-497e-b71d-66701a47152f" testId="b13bc7da-a874-062a-23c2-aeb82e2032bb" testName="AddNewTimer (08,010,029)" computerName="DESKTOP-AF03160" duration="00:00:10.0223833" startTime="2022-01-26T11:21:51.4339589-03:00" endTime="2022-01-26T11:22:20.6712669-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9e86b418-c8b6-4d36-87fa-170f05fa7a68" dataRowInfo="2" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="363c6191-f8cd-406e-9f3e-22e3290edfb2" parentExecutionId="de91140a-a4fd-497e-b71d-66701a47152f" testId="b13bc7da-a874-062a-23c2-aeb82e2032bb" testName="AddNewTimer (14,033,015)" computerName="DESKTOP-AF03160" duration="00:00:09.7121215" startTime="2022-01-26T11:21:51.4339589-03:00" endTime="2022-01-26T11:22:20.6712669-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="363c6191-f8cd-406e-9f3e-22e3290edfb2" dataRowInfo="3" resultType="DataDrivenDataRow" />
+      </InnerResults>
+    </UnitTestResult>
+    <UnitTestResult executionId="99774364-fe68-4156-b91c-3d478e95db00" testId="281ef8cf-432f-85f0-e58d-9a18385a6639" testName="EditingSecondItemTimer" computerName="DESKTOP-AF03160" duration="00:00:09.2718463" startTime="2022-01-26T11:22:20.6719322-03:00" endTime="2022-01-26T11:22:29.9455324-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="99774364-fe68-4156-b91c-3d478e95db00" />
+    <UnitTestResult executionId="63354181-4f93-4fe9-ab6c-db19d2328ab3" testId="a989d22b-9cb7-6df5-765a-6db1bd2bae01" testName="ExcluingSecondItemTimer" computerName="DESKTOP-AF03160" duration="00:00:08.3290563" startTime="2022-01-26T11:22:29.9455324-03:00" endTime="2022-01-26T11:22:38.2770646-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="63354181-4f93-4fe9-ab6c-db19d2328ab3">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MSTestOverview.Tests.TestAlarm.ExcluingSecondItemTimer threw exception: &#xD;
+OpenQA.Selenium.WebDriverException: An element could not be located on the page using the given search parameters.</Message>
+          <StackTrace>    em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)&#xD;
+   em OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)&#xD;
+   em OpenQA.Selenium.Appium.AppiumDriver`1.FindElementByXPath(String xpath)&#xD;
+   em MSTestOverview.Pages.PageObject.ClickInElementOrElementsByXPath(String[] elements) na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\PageObject.cs:linha 45&#xD;
+   em MSTestOverview.Pages.Alarm.AlarmPage.ClickExcludeSecondItemTimer() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Pages\Alarm\AlarmPage.cs:linha 80&#xD;
+   em MSTestOverview.Tests.TestAlarm.ExcluingSecondItemTimer() na C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\Tests\TestAlarm.cs:linha 89&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1a3266c2-2bdd-48eb-af4f-60d1f5e9c9bc" testId="4b194512-f91f-2131-ada1-5e9580aa5510" testName="DeleteWorldClock" computerName="DESKTOP-AF03160" duration="00:00:06.7892921" startTime="2022-01-26T11:23:01.9007145-03:00" endTime="2022-01-26T11:23:08.6913125-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1a3266c2-2bdd-48eb-af4f-60d1f5e9c9bc" />
+    <UnitTestResult executionId="409dd9a9-e0af-48f6-a987-8cf0cca18094" testId="496c22e1-68c0-fb49-1166-535dcb3a0130" testName="AddNewAlarm" computerName="DESKTOP-AF03160" duration="00:00:11.9177648" startTime="2022-01-26T11:22:38.2770646-03:00" endTime="2022-01-26T11:22:50.1954966-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="409dd9a9-e0af-48f6-a987-8cf0cca18094" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="TestMethodSum" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="ac55f08f-30ef-23f0-553c-8fb9260f6c63">
+      <Execution id="a3330fbb-5097-46b7-beae-d82430ba8d18" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.TestCalculator" name="TestMethodSum" />
+    </UnitTest>
+    <UnitTest name="TestMethodMinus" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="48d7f969-752f-b89c-2124-afce13e498d9">
+      <Execution id="85cc9dc2-77ae-4904-9eb8-d0d715917901" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.TestCalculator" name="TestMethodMinus" />
+    </UnitTest>
+    <UnitTest name="DeleteWorldClock" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="4b194512-f91f-2131-ada1-5e9580aa5510">
+      <Execution id="1a3266c2-2bdd-48eb-af4f-60d1f5e9c9bc" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.Tests.TestAlarm" name="DeleteWorldClock" />
+    </UnitTest>
+    <UnitTest name="AddWorldClock" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="dd4ea687-e746-4c8a-e2eb-cd7dac8db407">
+      <Execution id="709b8eda-f751-4cc2-9220-63719b553eb5" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.Tests.TestAlarm" name="AddWorldClock" />
+    </UnitTest>
+    <UnitTest name="AddNewTimer" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="b13bc7da-a874-062a-23c2-aeb82e2032bb">
+      <Execution id="de91140a-a4fd-497e-b71d-66701a47152f" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.Tests.TestAlarm" name="AddNewTimer" />
+    </UnitTest>
+    <UnitTest name="AddNewAlarm" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="496c22e1-68c0-fb49-1166-535dcb3a0130">
+      <Execution id="409dd9a9-e0af-48f6-a987-8cf0cca18094" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.Tests.TestAlarm" name="AddNewAlarm" />
+    </UnitTest>
+    <UnitTest name="ExcluingSecondItemTimer" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="a989d22b-9cb7-6df5-765a-6db1bd2bae01">
+      <Execution id="63354181-4f93-4fe9-ab6c-db19d2328ab3" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.Tests.TestAlarm" name="ExcluingSecondItemTimer" />
+    </UnitTest>
+    <UnitTest name="EditingSecondItemTimer" storage="c:\users\usuario\source\repos\mstestoverview\mstestoverview\bin\debug\mstestoverview.dll" id="281ef8cf-432f-85f0-e58d-9a18385a6639">
+      <Execution id="99774364-fe68-4156-b91c-3d478e95db00" />
+      <TestMethod codeBase="C:\Users\Usuario\source\repos\MSTestOverview\MSTestOverview\bin\Debug\MSTestOverview.dll" adapterTypeName="executor://mstestadapter/v2" className="MSTestOverview.Tests.TestAlarm" name="EditingSecondItemTimer" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="48d7f969-752f-b89c-2124-afce13e498d9" executionId="85cc9dc2-77ae-4904-9eb8-d0d715917901" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ac55f08f-30ef-23f0-553c-8fb9260f6c63" executionId="a3330fbb-5097-46b7-beae-d82430ba8d18" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dd4ea687-e746-4c8a-e2eb-cd7dac8db407" executionId="709b8eda-f751-4cc2-9220-63719b553eb5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b13bc7da-a874-062a-23c2-aeb82e2032bb" executionId="de91140a-a4fd-497e-b71d-66701a47152f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="281ef8cf-432f-85f0-e58d-9a18385a6639" executionId="99774364-fe68-4156-b91c-3d478e95db00" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a989d22b-9cb7-6df5-765a-6db1bd2bae01" executionId="63354181-4f93-4fe9-ab6c-db19d2328ab3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4b194512-f91f-2131-ada1-5e9580aa5510" executionId="1a3266c2-2bdd-48eb-af4f-60d1f5e9c9bc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="496c22e1-68c0-fb49-1166-535dcb3a0130" executionId="409dd9a9-e0af-48f6-a987-8cf0cca18094" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Resultados que não estão em uma lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos os resultados carregados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="11" executed="11" passed="10" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>
