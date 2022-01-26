@@ -4,7 +4,7 @@ This is a little automation with WinAppDriver and the framework MSTest using Pag
 ***Project settings:***
 - .NET Core 4.7.2;
 - Microsoft Visual Studio 2019.
-- WinAppDriver v1.2.1
+- WinAppDriver v1.2.1 
 - WinAppDriver UI Recorder v1.1
 - Appium Server GUI windows v1.15.1
 
